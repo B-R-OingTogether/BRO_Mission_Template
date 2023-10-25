@@ -1,0 +1,103 @@
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Player Respawn Upon Load In ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+respawnOnStart = 0; //This means that players will spawn where their character in located at the mission start. Change the 0 to 1 if you want players to select their respawn position upon load in. 
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ PDA/Intel Required Lines ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+#include "cfgMRH_SoldierTabIntelPictures.hpp"
+#include "cfgMRH_SoldierTabData.hpp"
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Compositions Init Script ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+zeusCompositionScriptLevel = 2;
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Zeus Debug Permissions ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+eenableDebugConsole[] = {"76561198245384032","76561198082075531","76561199065818667","76561198013527843"}; // Jup, Marshy, Rose, Space //
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Server Global Settings ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+disabledAI = 1; // Disables ai from filling player slots.
+disableChannels[] = {1,2,3,4,5,6}; // 0 = Global, 1 = Side, 2 = Command, 3 = Group, 4 = Vehicle, 5 = Direct, 6 = System. Admin/server/BattlEye can still use Global.
+aiKills = 0; // disable scorelist for AI players
+joinUnassigned = 1; // 0 = players forced into role on join
+
+author="B.R.O.";
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Arsenal and CBRN Required Lines ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+class CfgFunctions
+{
+	#include "CHSA\CfgFunctions.hpp"
+	#include "scripts\cbrn\funcs.hpp"
+};
+
+class CfgSounds {
+    sounds[] = {};
+    #include "scripts\cbrn\sounds\sounds.hpp"
+};
+/*
+class RscTitles {
+    #include "scripts\cbrn\rsctitles.hpp"
+};
+*/
+class Extended_PreInit_EventHandlers {
+    class ict_bro {
+        init = "call compile preprocessFile 'actions\compile.sqf';";
+    };
+	
+	class cbrn_preInit {
+        init = "[] call compile preProcessFileLineNumbers 'scripts\cbrn\XEH_PreInit.sqf'";
+    };
+};
+
+class Extended_InitPost_EventHandlers {
+    #include "scripts\cbrn\XEH_InitPost_eh.hpp"
+};
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Carry/Drag Weight ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+class Extended_PostInit_EventHandlers {
+    class BRO_DRAG_CARRY {
+        init = "ACE_maxWeightDrag = nil; ACE_maxWeightCarry = nil;"
+    };
+};
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Sound Files ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+class CfgSounds
+{
+    sounds[] = {};
+    class excavator
+    {
+        // Name for mission editor
+        name = "excavator";
+        //Path of the .ogg file. since it's in the same folder just use the filename
+        sound[] = {sounds\excavator.ogg, 500, 1};
+        titles[] = {0, ""};
+    };
+    class factory
+    {
+        // Name for mission editor
+        name = "factory";
+        //Path of the .ogg file. since it's in the same folder just use the filename
+        sound[] = {sounds\factory.ogg, 500, 1};
+        titles[] = {0, ""};
+    };
+	    class coal
+    {
+        // Name for mission editor
+        name = "coal";
+        //Path of the .ogg file. since it's in the same folder just use the filename
+        sound[] = {sounds\coal.ogg, 500, 1};
+        titles[] = {0, ""};
+    };
+		    class plane
+    {
+        // Name for mission editor
+        name = "plane";
+        //Path of the .ogg file. since it's in the same folder just use the filename
+        sound[] = {sounds\plane.ogg, 500, 1};
+        titles[] = {0, ""};
+    };
+};
