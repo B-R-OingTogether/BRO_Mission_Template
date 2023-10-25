@@ -64,3 +64,20 @@ jobs:
       uses: github/codeql-action/analyze@v2
       with:
         category: "/language:${{matrix.language}}"
+
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request: ~
+
+jobs:
+  test-sqflint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+
+      - uses: arma-actions/sqflint@v1.0
+        name: Validate with SQFLint   
