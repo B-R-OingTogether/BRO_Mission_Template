@@ -1,7 +1,7 @@
 _arsenalType = "ammo";
 _target = sideUnknown;
-//_specNames = ["Rifleman", "Officer", "Section Staff", "Section Medic", "Section MAAWS", "Medium Machinegunner", "Doctor", "Crewman", "Crewman Medic", "Marksman", "Engineer Section Staff", "Engineer", "Fixed Wing Pilot", "Shelldrake Section Staff", "Gunner", "Medical Section Staff", "Medical section Personal", "Rotory Pilot"];
-//_specSlots = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1];
+//_specNames = ["Rifleman", "Officer", "Section Staff", "Section Medic", "Section MAAWS", "Medium Machinegunner", "Doctor", "Crewman", "Crewman Medic", "Marksman", "Engineer Section Staff", "Engineer", "Shelldrake Section Staff", "Gunner", "Medical Section Staff", "Medical section Personal", "Rotory Pilot"];
+//_specSlots = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1];
 _specTypes = [
 	["B_Soldier_lite_F"],	//  Rifleman
 	["B_officer_F"],		// 	Officer	(Zeus,BHQ)
@@ -15,7 +15,6 @@ _specTypes = [
 	["B_soldier_M_F"],		//	Markman (AUXILLERY)
 	["B_soldier_exp_F"],	//	Engineer Section Staff
 	["B_engineer_F"],		//	Engineer
-	["B_Pilot_F"],			//	Fixed wing (LANCER)
 	["B_support_MG_F"],		//	Section Staff (ShellDrake) 
 	["B_support_Mort_F"],	//	Gunner (ShellDrake)
 	["B_recon_medic_F"],	//	Medical Section Staff
@@ -80,7 +79,6 @@ _crewmanEquipment = ["H_HelmetCrew_B","H_HelmetCrew_I_E","U_B_Cav_Coveralls"];
 _randomEquipment = [];
 _marksmanEquipment = ["CUP_srifle_RSASS_Black","CUP_srifle_RSASS_Dazzle","CUP_srifle_RSASS_Jungle","CUP_srifle_RSASS_Sand","CUP_srifle_RSASS_Winter","CUP_srifle_RSASS_WDLNet","CUP_srifle_RSASS_WDL","CUP_srifle_m110_kac_black","CUP_srifle_M110_black","CUP_srifle_M110","CUP_srifle_M110_woodland","CUP_srifle_m110_kac","CUP_srifle_m110_kac_woodland","CUP_srifle_M24_wdl","CUP_srifle_M24_blk","CUP_srifle_M24_des","CUP_srifle_L129A1","UK3CB_BAF_L129A1","CUP_srifle_L129A1_HG","CUP_srifle_Mk12SPR","optic_DMS_ghex_F","optic_DMS","optic_AMS_snd","optic_AMS_khk","optic_AMS","optic_KHS_tan","optic_KHS_old","optic_KHS_hex","optic_KHS_blk","optic_DMS_weathered_Kir_F","optic_DMS_weathered_F","CUP_optic_LeupoldM3LR","CUP_Mxx_camo","CUP_Mxx_camo_half"];
 _vanguardEquipment = ["MRH_HackingTool","slr_slingload_CargoSling","J3FF_BasicDefusalKit","ACE_DefusalKit","ACE_Fortify","ACE_M26_Clacker","ACE_Clacker","APERSMineDispenser_Mag","ATMine_Range_Mag","SLAMDirectionalMine_Wire_Mag","APERSTripMine_Wire_Mag","CUP_PipeBomb_M","APERSBoundingMine_Range_Mag","ClaymoreDirectionalMine_Remote_Mag","SatchelCharge_Remote_Mag","DemoCharge_Remote_Mag","CUP_Mine_M","ACE_UAVBattery","EOD9_HELMET","EOD9_HELMET_Dark","EOD9_HELMET_Tan","EOD9_HELMET_Base","EOD_Uniform_Dark","EOD_Uniform_Tan","EOD_Uniform","EOD_SUIT_vest_Dark","V_EOD_olive_F","EOD_SUIT_vest_Tan","EOD_SUIT_vest","B_UavTerminal","EODS_Mirror_Weapon","EODS_Mirror_2","EODS_Detector_Weapon","EOD_Bag","APOBS_B","APOBS_A","B_UGV_02_Demining_backpack_F"];
-_lancerEquipment = ["Laserdesignator","Laserdesignator_03","Laserdesignator_01_khk_F","ACE_HuntIR_monitor","H_PilotHelmetHeli_B","H_CrewHelmetHeli_B","U_B_HeliPilotCoveralls","U_AC_Massif_Rolled_Hotel_Private","U_AC_Massif_Hotel_Private","U_B_Hotel_Coveralls","B_UavTerminal","slr_slingload_CargoSling","U_B_CavAMCU_Coveralls_Arctic","U_B_CavAMCU_Coveralls_Arid","U_B_CavAMCU_Coveralls_Black","U_B_CavAMCU_Coveralls_Highlander","U_B_CavAMCU_Coveralls_Mandrake","U_B_CavAMCU_Coveralls_Neptune","U_B_CavAMCU_Coveralls_Tropic","U_B_CavAMCU_Coveralls_Typhon","U_B_CavAMCU_Coveralls_Urban","U_B_CavAMCU_Coveralls_Woodland","ACE_UAVBattery","CFP_SOARCREW_BLUE","CFP_SOARCREW_STACHE","CFP_SOARCREW_RED","CFP_SOARCREW_SKULL"];
 _shelldrakeEquipment = ["B_UavTerminal","B_W_Static_Designator_01_weapon_F","B_UAV_06_backpack_F","MRH_HackingTool","Laserdesignator_01_khk_F","Laserdesignator_03","Laserdesignator","ACE_RangeTable_82mm","ACE_ATragMX","ACE_RangeCard","ACE_UAVBattery","B_UavTerminal","TFAR_anprc152","ACE_artilleryTable"];
 _hotelEquipment = ["Laserdesignator","Laserdesignator_03","Laserdesignator_01_khk_F","ACE_HuntIR_monitor","H_PilotHelmetHeli_B","H_CrewHelmetHeli_B","U_B_HeliPilotCoveralls","U_AC_Massif_Rolled_Hotel_Private","U_AC_Massif_Hotel_Private","U_B_Hotel_Coveralls","B_UavTerminal","slr_slingload_CargoSling","U_B_CavAMCU_Coveralls_Arctic","U_B_CavAMCU_Coveralls_Arid","U_B_CavAMCU_Coveralls_Black","U_B_CavAMCU_Coveralls_Highlander","U_B_CavAMCU_Coveralls_Mandrake","U_B_CavAMCU_Coveralls_Neptune","U_B_CavAMCU_Coveralls_Tropic","U_B_CavAMCU_Coveralls_Typhon","U_B_CavAMCU_Coveralls_Urban","U_B_CavAMCU_Coveralls_Woodland","ACE_UAVBattery","CFP_SOARCREW_BLUE","CFP_SOARCREW_STACHE","CFP_SOARCREW_RED","CFP_SOARCREW_SKULL"];
 
@@ -100,7 +98,6 @@ _crewmanmedicItems =			 _generalEquipment 		+ _generalItems		+ _infantryRadio;
 _marksmanItems =				 _generalEquipment 		+ _generalItems		+ _infantryRadio		+ _marksmanEquipment;
 _engineersectionstaffItems = 	 _generalEquipment 		+ _staffItems		+ _staffRadio			+ _vanguardEquipment		+ _glaAmmo;
 _engineerItems =				 _generalEquipment 		+ _generalItems		+ _infantryRadio		+ _vanguardEquipment		+ _infantryLaunchers;
-_fixedwingpilotItems =			 _generalEquipment 		+ _staffItems		+ _staffRadio			+ _lancerEquipment			+ _glaAmmo;
 _shelldrakesectionstaffItems =	 _generalEquipment 		+ _staffItems		+ _staffRadio			+ _shelldrakeEquipment		+ _glaAmmo		+ _infantryLaunchers;
 _gunnerItems =					 _generalEquipment 		+ _generalItems		+ _infantryRadio		+ _shelldrakeEquipment		+ _infantryLaunchers;
 _medicalsectionstaffItems =		 _generalEquipment 		+ _staffItems		+ _staffRadio			+ _glaAmmo;
@@ -108,7 +105,7 @@ _medicsectionItems =			 _generalEquipment 		+ _generalItems		+ _infantryRadio;
 _hotelpilotItems =				 _generalEquipment 		+ _staffItems		+ _staffRadio			+ _hotelEquipment		+ _vanguardEquipment		+ _glaAmmo;
 /***********************************************************************************************/
 
-_specItems = [_riflemanItems, _officerItems, _sectionstaffItems, _sectionmedicItems, _sectionmaawsItems, _mediummachinegunnerItems, _doctorItems, _crewmanItems, _crewmanmedicItems, _marksmanItems, _engineersectionstaffItems, _engineerItems, _fixedwingpilotItems, _shelldrakesectionstaffItems, _gunnerItems, _medicalsectionstaffItems, _medicsectionItems, _hotelpilotItems];
+_specItems = [_riflemanItems, _officerItems, _sectionstaffItems, _sectionmedicItems, _sectionmaawsItems, _mediummachinegunnerItems, _doctorItems, _crewmanItems, _crewmanmedicItems, _marksmanItems, _engineersectionstaffItems, _engineerItems, _shelldrakesectionstaffItems, _gunnerItems, _medicalsectionstaffItems, _medicsectionItems, _hotelpilotItems];
 //////////////////////////////////////////////////////////////////////////////////////////////
 
 [[_this select 0, _specTypes, _specItems, _arsenalType]] spawn CHSA_fnc_executeLocalArsenal;
