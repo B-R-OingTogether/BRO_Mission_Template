@@ -99,7 +99,7 @@ clearBackpackCargo _crate;
 
 // Log it
 [[player, _crateClass, _spawn_pos], {
-	diag_log Format["[BRO Spawners]: %1 spawned %2 at position %3", name (_this select 0), _this select 1, _this select 2];
+	diag_log Format["[BRO Spawners Resupplys]: %1 spawned %2 at position %3", name (_this select 0), _this select 1, _this select 2];
 }] remoteExec ["call", 2, false];
 
 systemChat "A crate was spawned near you.";

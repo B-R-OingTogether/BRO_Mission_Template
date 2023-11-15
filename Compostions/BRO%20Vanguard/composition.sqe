@@ -1,0 +1,1257 @@
+version=54;
+center[]={4173.8198,398.22546,6590.1694};
+class items
+{
+	items=3;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-5.4604492,2.6299744,-0.62939453};
+			angles[]={6.2390308,3.0788229,0.055655181};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			textures="NATO_Arid";
+			disableSimulation=1;
+			dynamicSimulation=1;
+		};
+		id=911;
+		type="CUP_B_M1A2C_NATO";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="VehicleCustomization";
+				expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+				class Value
+				{
+					class data
+					{
+						singleType="ARRAY";
+						class value
+						{
+							items=2;
+							class Item0
+							{
+								class data
+								{
+									singleType="ARRAY";
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												singleType="STRING";
+												value="NATO_Arid";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+								};
+							};
+							class Item1
+							{
+								class data
+								{
+									singleType="ARRAY";
+									class value
+									{
+										items=36;
+										class Item0
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_bustle_rack_ext";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+										class Item2
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_duke_antennas";
+											};
+										};
+										class Item3
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+										class Item4
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_loader_shield";
+											};
+										};
+										class Item5
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+										class Item6
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_rear_side_skirt";
+											};
+										};
+										class Item7
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+										class Item8
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_cip_panel_bustle";
+											};
+										};
+										class Item9
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item10
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_cip_panel_rear";
+											};
+										};
+										class Item11
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item12
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_front_ti_panels";
+											};
+										};
+										class Item13
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item14
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_reserve_wheels";
+											};
+										};
+										class Item15
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item16
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_Deployment_1_1";
+											};
+										};
+										class Item17
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item18
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_Deployment_1_2";
+											};
+										};
+										class Item19
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item20
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_Deployment_1_3";
+											};
+										};
+										class Item21
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item22
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_Deployment_2_1";
+											};
+										};
+										class Item23
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item24
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_Deployment_2_2";
+											};
+										};
+										class Item25
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item26
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_Deployment_2_3";
+											};
+										};
+										class Item27
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item28
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_net_cannon";
+											};
+										};
+										class Item29
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+										class Item30
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_net_turret";
+											};
+										};
+										class Item31
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+										class Item32
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_net_hull";
+											};
+										};
+										class Item33
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+										class Item34
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_turret_bundle";
+											};
+										};
+										class Item35
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+									};
+								};
+							};
+						};
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="CUP_M1Abrams_TankNumber";
+				expression="_this setVariable ['CUP_M1Abrams_TankNumber', _value, true]; _this call CUP_fnc_M1AbramsDecals;";
+				class Value
+				{
+					class data
+					{
+						singleType="SCALAR";
+						value=-1;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ammoBox";
+				expression="[_this,_value] call bis_fnc_initAmmoBox;";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="[[[[""arifle_MXC_F"",""launch_NLAW_F"",""FirstAidKit"",""Medikit""],[2,1,10,1]],[[""30Rnd_65x39_caseless_mag"",""NLAW_F"",""SmokeShell"",""SmokeShellOrange"",""Chemlight_red""],[20,2,2,2,2]],[[""ToolKit""],[1]],[[""B_FieldPack_cbr""],[4]]],false]";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="mrh_AmmoCrateNumberItem";
+				expression="_this setVariable ['MRH_numberOfammo',_value,true]";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="10";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="CUP_M1Abrams_ShellLoadout";
+				expression="[_this, _value, [0]] call CUP_fnc_TankShellLoadoutImplement;";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="[42,""CUP_1Rnd_TE1_Red_Tracer_120mm_M829_M256_Cannon_M"",0,""CUP_1Rnd_TE1_Red_Tracer_120mm_M829A1_M256_Cannon_M"",0,""CUP_1Rnd_TE1_Red_Tracer_120mm_M829A2_M256_Cannon_M"",0,""CUP_1Rnd_TE1_Red_Tracer_120mm_M829A3_M256_Cannon_M"",0,""CUP_1Rnd_TE1_Red_Tracer_120mm_M829A4_M256_Cannon_M"",22,""CUP_1Rnd_TE1_Red_Tracer_120mm_M830_M256_Cannon_M"",0,""CUP_1Rnd_TE1_Red_Tracer_120mm_M830A1_M256_Cannon_M"",20,""CUP_1Rnd_TE1_Red_Tracer_120mm_M908_M256_Cannon_M"",0,""CUP_1Rnd_TE1_Red_Tracer_120mm_M1028_M256_Cannon_M"",0]";
+					};
+				};
+			};
+			nAttributes=5;
+		};
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.049316406,2.6702576,-0.22509766};
+			angles[]={6.2114191,3.0788229,0.020522699};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			textures="NATO_Arid";
+			disableSimulation=1;
+			dynamicSimulation=1;
+		};
+		id=912;
+		type="CUP_B_M1A2C_NATO";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="VehicleCustomization";
+				expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+				class Value
+				{
+					class data
+					{
+						singleType="ARRAY";
+						class value
+						{
+							items=2;
+							class Item0
+							{
+								class data
+								{
+									singleType="ARRAY";
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												singleType="STRING";
+												value="NATO_Arid";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+								};
+							};
+							class Item1
+							{
+								class data
+								{
+									singleType="ARRAY";
+									class value
+									{
+										items=36;
+										class Item0
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_bustle_rack_ext";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+										class Item2
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_duke_antennas";
+											};
+										};
+										class Item3
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+										class Item4
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_loader_shield";
+											};
+										};
+										class Item5
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+										class Item6
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_rear_side_skirt";
+											};
+										};
+										class Item7
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+										class Item8
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_cip_panel_bustle";
+											};
+										};
+										class Item9
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item10
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_cip_panel_rear";
+											};
+										};
+										class Item11
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item12
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_front_ti_panels";
+											};
+										};
+										class Item13
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item14
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_reserve_wheels";
+											};
+										};
+										class Item15
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item16
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_Deployment_1_1";
+											};
+										};
+										class Item17
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item18
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_Deployment_1_2";
+											};
+										};
+										class Item19
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item20
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_Deployment_1_3";
+											};
+										};
+										class Item21
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item22
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_Deployment_2_1";
+											};
+										};
+										class Item23
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item24
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_Deployment_2_2";
+											};
+										};
+										class Item25
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item26
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_Deployment_2_3";
+											};
+										};
+										class Item27
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item28
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_net_cannon";
+											};
+										};
+										class Item29
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+										class Item30
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_net_turret";
+											};
+										};
+										class Item31
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+										class Item32
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_net_hull";
+											};
+										};
+										class Item33
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+										class Item34
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_turret_bundle";
+											};
+										};
+										class Item35
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+									};
+								};
+							};
+						};
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="CUP_M1Abrams_TankNumber";
+				expression="_this setVariable ['CUP_M1Abrams_TankNumber', _value, true]; _this call CUP_fnc_M1AbramsDecals;";
+				class Value
+				{
+					class data
+					{
+						singleType="SCALAR";
+						value=-1;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ammoBox";
+				expression="[_this,_value] call bis_fnc_initAmmoBox;";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="[[[[""arifle_MXC_F"",""launch_NLAW_F"",""FirstAidKit"",""Medikit""],[2,1,10,1]],[[""30Rnd_65x39_caseless_mag"",""NLAW_F"",""SmokeShell"",""SmokeShellOrange"",""Chemlight_red""],[20,2,2,2,2]],[[""ToolKit""],[1]],[[""B_FieldPack_cbr""],[4]]],false]";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="mrh_AmmoCrateNumberItem";
+				expression="_this setVariable ['MRH_numberOfammo',_value,true]";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="10";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="CUP_M1Abrams_ShellLoadout";
+				expression="[_this, _value, [0]] call CUP_fnc_TankShellLoadoutImplement;";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="[42,""CUP_1Rnd_TE1_Red_Tracer_120mm_M829_M256_Cannon_M"",0,""CUP_1Rnd_TE1_Red_Tracer_120mm_M829A1_M256_Cannon_M"",0,""CUP_1Rnd_TE1_Red_Tracer_120mm_M829A2_M256_Cannon_M"",0,""CUP_1Rnd_TE1_Red_Tracer_120mm_M829A3_M256_Cannon_M"",0,""CUP_1Rnd_TE1_Red_Tracer_120mm_M829A4_M256_Cannon_M"",22,""CUP_1Rnd_TE1_Red_Tracer_120mm_M830_M256_Cannon_M"",0,""CUP_1Rnd_TE1_Red_Tracer_120mm_M830A1_M256_Cannon_M"",20,""CUP_1Rnd_TE1_Red_Tracer_120mm_M908_M256_Cannon_M"",0,""CUP_1Rnd_TE1_Red_Tracer_120mm_M1028_M256_Cannon_M"",0]";
+					};
+				};
+			};
+			nAttributes=5;
+		};
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={5.3842773,2.7715454,0.24853516};
+			angles[]={6.1972356,3.0788229,0.020522699};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			textures="NATO_Arid";
+			disableSimulation=1;
+			dynamicSimulation=1;
+		};
+		id=913;
+		type="CUP_B_M1A2C_NATO";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="VehicleCustomization";
+				expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+				class Value
+				{
+					class data
+					{
+						singleType="ARRAY";
+						class value
+						{
+							items=2;
+							class Item0
+							{
+								class data
+								{
+									singleType="ARRAY";
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												singleType="STRING";
+												value="NATO_Arid";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+								};
+							};
+							class Item1
+							{
+								class data
+								{
+									singleType="ARRAY";
+									class value
+									{
+										items=36;
+										class Item0
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_bustle_rack_ext";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+										class Item2
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_duke_antennas";
+											};
+										};
+										class Item3
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+										class Item4
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_loader_shield";
+											};
+										};
+										class Item5
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+										class Item6
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_rear_side_skirt";
+											};
+										};
+										class Item7
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+										class Item8
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_cip_panel_bustle";
+											};
+										};
+										class Item9
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item10
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_cip_panel_rear";
+											};
+										};
+										class Item11
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item12
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_front_ti_panels";
+											};
+										};
+										class Item13
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item14
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_reserve_wheels";
+											};
+										};
+										class Item15
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item16
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_Deployment_1_1";
+											};
+										};
+										class Item17
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item18
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_Deployment_1_2";
+											};
+										};
+										class Item19
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item20
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_Deployment_1_3";
+											};
+										};
+										class Item21
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item22
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_Deployment_2_1";
+											};
+										};
+										class Item23
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item24
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_Deployment_2_2";
+											};
+										};
+										class Item25
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item26
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_Deployment_2_3";
+											};
+										};
+										class Item27
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item28
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_net_cannon";
+											};
+										};
+										class Item29
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+										class Item30
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_net_turret";
+											};
+										};
+										class Item31
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+										class Item32
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_net_hull";
+											};
+										};
+										class Item33
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+										class Item34
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hide_turret_bundle";
+											};
+										};
+										class Item35
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+									};
+								};
+							};
+						};
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="CUP_M1Abrams_TankNumber";
+				expression="_this setVariable ['CUP_M1Abrams_TankNumber', _value, true]; _this call CUP_fnc_M1AbramsDecals;";
+				class Value
+				{
+					class data
+					{
+						singleType="SCALAR";
+						value=-1;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ammoBox";
+				expression="[_this,_value] call bis_fnc_initAmmoBox;";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="[[[[""arifle_MXC_F"",""launch_NLAW_F"",""FirstAidKit"",""Medikit""],[2,1,10,1]],[[""30Rnd_65x39_caseless_mag"",""NLAW_F"",""SmokeShell"",""SmokeShellOrange"",""Chemlight_red""],[20,2,2,2,2]],[[""ToolKit""],[1]],[[""B_FieldPack_cbr""],[4]]],false]";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="mrh_AmmoCrateNumberItem";
+				expression="_this setVariable ['MRH_numberOfammo',_value,true]";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="10";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="CUP_M1Abrams_ShellLoadout";
+				expression="[_this, _value, [0]] call CUP_fnc_TankShellLoadoutImplement;";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="[42,""CUP_1Rnd_TE1_Red_Tracer_120mm_M829_M256_Cannon_M"",0,""CUP_1Rnd_TE1_Red_Tracer_120mm_M829A1_M256_Cannon_M"",0,""CUP_1Rnd_TE1_Red_Tracer_120mm_M829A2_M256_Cannon_M"",0,""CUP_1Rnd_TE1_Red_Tracer_120mm_M829A3_M256_Cannon_M"",0,""CUP_1Rnd_TE1_Red_Tracer_120mm_M829A4_M256_Cannon_M"",22,""CUP_1Rnd_TE1_Red_Tracer_120mm_M830_M256_Cannon_M"",0,""CUP_1Rnd_TE1_Red_Tracer_120mm_M830A1_M256_Cannon_M"",20,""CUP_1Rnd_TE1_Red_Tracer_120mm_M908_M256_Cannon_M"",0,""CUP_1Rnd_TE1_Red_Tracer_120mm_M1028_M256_Cannon_M"",0]";
+					};
+				};
+			};
+			nAttributes=5;
+		};
+	};
+};

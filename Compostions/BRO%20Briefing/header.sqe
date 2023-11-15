@@ -1,0 +1,16 @@
+version=54;
+name="BRO Briefing";
+author="Spacelow";
+category="EdSubcat_Default";
+requiredAddons[]=
+{
+	"A3_Props_F_Exp_Military_Camps",
+	"A3_Structures_F_Items_Electronics",
+	"A3_Props_F_Enoch_Military_Camps",
+	"ace_slideshow",
+	"A3_Structures_F_Civ_InfoBoards",
+	"A3_Structures_F_Heli_Furniture",
+	"ace_sitting",
+	"A3_Structures_F_Civ_Camping",
+	"Desert"
+};

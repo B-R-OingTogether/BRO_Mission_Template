@@ -1,0 +1,14 @@
+version=54;
+name="BRO FOB";
+author="Spacelow";
+category="EdSubcat_Default";
+requiredAddons[]=
+{
+	"A3_Structures_F_Enoch_Military_Camps",
+	"A3_Structures_F_Walls",
+	"emr_main",
+	"ace_logistics_wirecutter",
+	"ace_concertina_wire",
+	"A3_Structures_F_Mil_Cargo",
+	"CUP_CABuildings_Misc"
+};

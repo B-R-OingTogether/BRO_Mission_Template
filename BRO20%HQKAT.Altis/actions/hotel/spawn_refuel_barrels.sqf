@@ -17,7 +17,7 @@ if (surfaceIsWater _spawn_pos) then {_crate setPosASL [((getPosASL _target) sele
 
 // Log the spawn. Just in case someone is trying to crash the server.
 [[player, _spawn_pos], {
-	diag_log Format["[BRO Spawners]: %1 spawned %2 at position %3", name (_this select 0), CRATE_CLASSNAME, _this select 1];
+	diag_log Format["[BRO Spawners Barrels]: %1 spawned %2 at position %3", name (_this select 0), CRATE_CLASSNAME, _this select 1];
 }] remoteExec ["call", 2, false];
 
 systemChat "A crate was spawned near you.";

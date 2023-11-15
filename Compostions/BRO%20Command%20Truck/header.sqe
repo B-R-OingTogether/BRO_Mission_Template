@@ -1,0 +1,18 @@
+version=54;
+name="BRO Command Truck";
+author="Spacelow";
+category="EdSubcat_Default";
+requiredAddons[]=
+{
+	"Desert",
+	"CFP_B_USCIA",
+	"A3_Weapons_F",
+	"CUP_Creatures_People_Civil_Takistan",
+	"CUP_Creatures_Military_USMC",
+	"CUP_Creatures_Military_PMC",
+	"ace_realisticnames",
+	"A3_Weapons_F_Items",
+	"ace_medical_engine",
+	"ace_medical_treatment",
+	"BRO_Main"
+};

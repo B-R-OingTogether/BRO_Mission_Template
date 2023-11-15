@@ -21,6 +21,7 @@ clearBackpackCargo _crate;
 private _crateItems = [
   ["CUP_compats_105mm_he", 100],
   ["CUP_compats_105mm_laser", 50]
+  ["CUP_compats_105mm_smoke", 100]
 ];
 
 
@@ -32,7 +33,9 @@ private _crateItems = [
 // Log the spawn. Just in case someone is trying to crash the server.
 
 [[player, _spawn_pos], {
-	diag_log Format["[BRO Spawners]: %1 spawned %2 at position %3", name (_this select 0), CRATE_CLASSNAME, _this select 1];
+
+	diag_log Format["[BRO Spawners Art]: %1 spawned %2 at position %3", name (_this select 0), CRATE_CLASSNAME, _this select 1];
+
 }] remoteExec ["call", 2, false];
 
 systemChat "A crate was spawned near you.";

@@ -19,6 +19,7 @@ adv_aceCPR_quotient = 1;
 adv_aceCPR_onlyDoctors = 0;
 adv_aceCPR_probabilities = [60,40,20,85];
 */
+
 [player, -1] call BIS_fnc_respawnTickets;
 
 WIH_Spectate = {

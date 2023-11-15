@@ -1,0 +1,303 @@
+version=54;
+center[]={2605.3047,14.226777,2809.9575};
+class items
+{
+	items=2;
+	class Item0
+	{
+		dataType="Layer";
+		name="BRO Redeployment";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Layer";
+				name="BRO Arsenal + Respawn";
+				class Entities
+				{
+					items=2;
+					class Item0
+					{
+						dataType="Layer";
+						name="BRO Units NEW";
+						class Entities
+						{
+							items=1;
+							class Item0
+							{
+								dataType="Layer";
+								name="BRO Units";
+								class Entities
+								{
+									items=1;
+									class Item0
+									{
+										dataType="Layer";
+										name="BROOOOOOOOOOOOOOO_19";
+										class Entities
+										{
+											items=1;
+											class Item0
+											{
+												dataType="Layer";
+												name="BROOOOOOOOOOOOOOO_20";
+												class Entities
+												{
+													items=1;
+													class Item0
+													{
+														dataType="Layer";
+														name="BROOOOOOOOOOOOOOO_21";
+														class Entities
+														{
+															items=1;
+															class Item0
+															{
+																dataType="Layer";
+																name="BROOOOOOOOOOOOOOO_22";
+																class Entities
+																{
+																	items=1;
+																	class Item0
+																	{
+																		dataType="Layer";
+																		name="BROOOOOOOOOOOOOOO_23";
+																		class Entities
+																		{
+																			items=1;
+																			class Item0
+																			{
+																				dataType="Logic";
+																				class PositionInfo
+																				{
+																					position[]={-1.4597168,0,-0.038085938};
+																					angles[]={0.0090299342,4.6960053,0.083306462};
+																				};
+																				name="Respawn_west";
+																				id=25;
+																				type="ModuleRespawnPosition_F";
+																				class CustomAttributes
+																				{
+																					class Attribute0
+																					{
+																						property="ModuleRespawnPosition_F_Marker";
+																						expression="_this setVariable ['Marker',_value,true];";
+																						class Value
+																						{
+																							class data
+																							{
+																								singleType="STRING";
+																								value="0";
+																							};
+																						};
+																					};
+																					class Attribute1
+																					{
+																						property="ModuleRespawnPosition_F_Name";
+																						expression="_this setVariable ['Name',_value,true];";
+																						class Value
+																						{
+																							class data
+																							{
+																								singleType="STRING";
+																								value="HQ";
+																							};
+																						};
+																					};
+																					class Attribute2
+																					{
+																						property="ModuleRespawnPosition_F_Side";
+																						expression="_this setVariable ['Side',_value,true];";
+																						class Value
+																						{
+																							class data
+																							{
+																								singleType="STRING";
+																								value="1";
+																							};
+																						};
+																					};
+																					class Attribute3
+																					{
+																						property="ModuleRespawnPosition_F_ShowNotification";
+																						expression="_this setVariable ['ShowNotification',_value,true];";
+																						class Value
+																						{
+																							class data
+																							{
+																								singleType="STRING";
+																								value="1";
+																							};
+																						};
+																					};
+																					class Attribute4
+																					{
+																						property="ModuleRespawnPosition_F_Type";
+																						expression="_this setVariable ['Type',_value,true];";
+																						class Value
+																						{
+																							class data
+																							{
+																								singleType="STRING";
+																								value="0";
+																							};
+																						};
+																					};
+																					nAttributes=5;
+																				};
+																			};
+																		};
+																		id=24;
+																	};
+																};
+																id=23;
+															};
+														};
+														id=22;
+													};
+												};
+												id=21;
+											};
+										};
+										id=20;
+									};
+								};
+								id=19;
+							};
+						};
+						id=18;
+					};
+					class Item1
+					{
+						dataType="Comment";
+						class PositionInfo
+						{
+							position[]={0.1159668,0.13117409,0.0080566406};
+							angles[]={0.0090299342,2.3047528,0.083306462};
+						};
+						title="BRO REDEPLOYMENT";
+						id=27;
+					};
+				};
+				id=17;
+				atlOffset=8.4877014e-005;
+			};
+		};
+		id=28;
+		atlOffset=8.4877014e-005;
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={1.3432617,1.9826269,0.029541016};
+			angles[]={0.0090233525,1.4792538,0.083304562};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			disableSimulation=1;
+		};
+		id=184;
+		type="BROMedia_Deploy";
+		atlOffset=0.0059995651;
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="mrh_hackAndCollectDataHackDuration";
+				expression="_this setVariable ['MRH_objectHackDuration',_value,true]";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="10";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="mrh_hackAndCollectPicsHack";
+				expression="_this setVariable ['MRH_objectHackPicturesReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="[""MRH_poweredByMilsimtools"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						singleType="BOOL";
+						value=0;
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="mrh_search_CodeFound";
+				expression="_this setVariable ['MRH_object_Found_code',_value,true]";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="true";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="mrh_search_nameFound";
+				expression="_this setVariable ['MRH_object_Found',_value,true]";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="mrh_hackAndCollectDataHackFileSize";
+				expression="_this setVariable ['MRH_objectHackFileSize',_value,true]";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="10";
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="mrh_hackAndCollectDataHackData";
+				expression="_this setVariable ['MRH_objectHackDataReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="[""MRH_SdTabTestDataEntry"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			nAttributes=7;
+		};
+	};
+};

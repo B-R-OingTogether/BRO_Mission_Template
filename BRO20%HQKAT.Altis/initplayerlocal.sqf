@@ -6,8 +6,8 @@ if (!hasInterface) exitWith {}; //This is so the scripting doesn't run on a head
 [] spawn
   {
   	waitUntil {player == player};
-  	[player,["dataEntry1"]]call MRH_fnc_MilsimTools_SoldierTab_attributeData; 	//This is any data entries/intel that you want visible at the start of the mission that will be visible to everyone. 
-  	[player,["pic1"]]call MRH_fnc_MilsimTools_SoldierTab_attributePictures; //This is any pictures that you want visible at the start of the mission that will be visible to everyone.
+  	[player,["dataEntry1"]]call MRH_fnc_MilsimTools_SoldierTab_attributeData;    //This is any data entries/intel that you want visible at the start of the mission that will be visible to everyone. 
+  	[player,["pic1"]]call MRH_fnc_MilsimTools_SoldierTab_attributePictures;      //This is any pictures that you want visible at the start of the mission that will be visible to everyone.
   };
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Unconscious Camera Script ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
@@ -22,7 +22,7 @@ player addEventHandler ["killed", {[false, false, false] call ace_spectator_fnc_
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ View Distance Settings ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
 setViewDistance 3000;
-setObjectViewDistance 2750;
+setObjectViewDistance 2500;
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Curator/Zeus Creation ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
