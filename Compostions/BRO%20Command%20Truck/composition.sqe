@@ -1,0 +1,572 @@
+version=54;
+center[]={5928.5752,83.040001,11869.046};
+class items
+{
+	items=3;
+	class Item0
+	{
+		dataType="Layer";
+		name="Command Truck";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Comment";
+				class PositionInfo
+				{
+					position[]={-0.51074219,0,-0.97265625};
+					angles[]={0,5.1642423,0};
+				};
+				title="Command Truck";
+				id=5576;
+			};
+		};
+		id=5577;
+	};
+	class Item1
+	{
+		dataType="Group";
+		side="West";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0.83447266,0.0014419556,0.71582031};
+					angles[]={0,1.1325781,-0};
+				};
+				side="West";
+				flags=6;
+				class Attributes
+				{
+					skill=1;
+					class Inventory
+					{
+						class uniform
+						{
+							typeName="CUP_I_B_PMC_Unit_13";
+							isBackpack=0;
+						};
+						class vest
+						{
+							typeName="CUP_V_PMC_CIRAS_Khaki_Empty";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="HandGrenade";
+									count=4;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="FirstAidKit";
+									count=1;
+								};
+							};
+						};
+						map="ItemMap";
+						compass="ItemCompass";
+						watch="ItemWatch";
+						radio="ItemRadio";
+						gps="ItemGPS";
+						goggles="CUP_Beard_Blonde";
+						headgear="CUP_H_FR_Headset";
+					};
+				};
+				id=5622;
+				type="CFP_B_USCIA_paramilitary_officer_01";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="ENH_aimingSpeed";
+						expression="if (_value == 0.5) exitWith {}; [_this, ['aimingSpeed', _value]] remoteExec ['setSkill', _this]";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=0;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="mrh_message_passedParams";
+						expression="_this setVariable ['MRH_message_parametersPassed',_value,true]";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="[]";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="mrh_message_codeToExec";
+						expression="_this setVariable ['MRH_message_codeToExecute',_value,true]";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="";
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="ENH_spotTime";
+						expression="if (_value == 0.5) exitWith {}; [_this, ['spotTime', _value]] remoteExec ['setSkill', _this]";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=0;
+							};
+						};
+					};
+					class Attribute4
+					{
+						property="mrh_textMess";
+						expression="_this setVariable ['MRH_message_conversationText',_value,true]";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="";
+							};
+						};
+					};
+					class Attribute5
+					{
+						property="ENH_spotDistance";
+						expression="if (_value == 0.5) exitWith {}; [_this, ['spotDistance', _value]] remoteExec ['setSkill', _this]";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=0;
+							};
+						};
+					};
+					class Attribute6
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=1.02;
+							};
+						};
+					};
+					class Attribute7
+					{
+						property="ENH_reloadingSpeed";
+						expression="if (_value == 0.5) exitWith {}; [_this, ['reloadSpeed', _value]] remoteExec ['setSkill', _this]";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=0;
+							};
+						};
+					};
+					class Attribute8
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="Male02ENG";
+							};
+						};
+					};
+					class Attribute9
+					{
+						property="enh_general";
+						expression="if (_value == 0.5) exitWith {}; [_this, ['general', _value]] remoteExec ['setSkill', _this]";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=1;
+							};
+						};
+					};
+					class Attribute10
+					{
+						property="ENH_commanding";
+						expression="if (_value == 0.5) exitWith {}; [_this, ['commanding', _value]] remoteExec ['setSkill', _this]";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=1;
+							};
+						};
+					};
+					class Attribute11
+					{
+						property="ENH_aimingShake";
+						expression="if (_value == 0.5) exitWith {}; [_this, ['aimingShake', _value]] remoteExec ['setSkill', _this]";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=0;
+							};
+						};
+					};
+					class Attribute12
+					{
+						property="ENH_aimingAccuracy";
+						expression="if (_value == 0.5) exitWith {}; [_this, ['aimingAccuracy', _value]] remoteExec ['setSkill', _this]";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=0;
+							};
+						};
+					};
+					class Attribute13
+					{
+						property="ENH_courage";
+						expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=1;
+							};
+						};
+					};
+					class Attribute14
+					{
+						property="ENH_allowFleeing";
+						expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=0;
+							};
+						};
+					};
+					nAttributes=15;
+				};
+			};
+		};
+		class Attributes
+		{
+		};
+		class CrewLinks
+		{
+			class LinkIDProvider
+			{
+				nextID=1;
+			};
+			class Links
+			{
+				items=1;
+				class Item0
+				{
+					linkID=0;
+					item0=5622;
+					item1=5621;
+					class CustomData
+					{
+						role=1;
+					};
+				};
+			};
+		};
+		id=5620;
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.25439453,1.5695953,0.48535156};
+			angles[]={0,1.1325781,-0};
+		};
+		side="West";
+		flags=6;
+		class Attributes
+		{
+			textures="Olive";
+		};
+		id=5621;
+		type="Commanding_4WD";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="VehicleCustomization";
+				expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+				class Value
+				{
+					class data
+					{
+						singleType="ARRAY";
+						class value
+						{
+							items=2;
+							class Item0
+							{
+								class data
+								{
+									singleType="ARRAY";
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												singleType="STRING";
+												value="Olive";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+									};
+								};
+							};
+							class Item1
+							{
+								class data
+								{
+									singleType="ARRAY";
+									class value
+									{
+										items=20;
+										class Item0
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hideLeftDoor";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item2
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hideRightDoor";
+											};
+										};
+										class Item3
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item4
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hideRearDoor";
+											};
+										};
+										class Item5
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+										class Item6
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hideBullbar";
+											};
+										};
+										class Item7
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+										class Item8
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hideFenders";
+											};
+										};
+										class Item9
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+										class Item10
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hideHeadSupportRear";
+											};
+										};
+										class Item11
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item12
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hideHeadSupportFront";
+											};
+										};
+										class Item13
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+										class Item14
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hideRollcage";
+											};
+										};
+										class Item15
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item16
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hideSeatsRear";
+											};
+										};
+										class Item17
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=1;
+											};
+										};
+										class Item18
+										{
+											class data
+											{
+												singleType="STRING";
+												value="hideSpareWheel";
+											};
+										};
+										class Item19
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0;
+											};
+										};
+									};
+								};
+							};
+						};
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+};
+class VehicleInVehicleLinks
+{
+	class LinkIDProvider
+	{
+		nextID=1;
+	};
+	class Links
+	{
+		items=1;
+		class Item0
+		{
+			linkID=0;
+			item0=5622;
+			item1=5621;
+			class CustomData
+			{
+				role=1;
+			};
+		};
+	};
+};

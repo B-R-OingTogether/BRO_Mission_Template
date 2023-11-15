@@ -1,0 +1,10 @@
+version=54;
+name="BRO Redeployment";
+author="Spacelow";
+category="EdSubcat_Default";
+requiredAddons[]=
+{
+	"A3_Modules_F_Multiplayer",
+	"Desert",
+	"BROMedia"
+};

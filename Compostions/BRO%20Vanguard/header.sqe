@@ -1,0 +1,8 @@
+version=54;
+name="BRO Vanguard";
+author="Spacelow";
+category="EdSubcat_Default";
+requiredAddons[]=
+{
+	"CUP_TrackedVehicles_M1A2Abrams"
+};

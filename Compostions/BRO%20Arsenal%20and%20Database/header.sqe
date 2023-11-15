@@ -1,0 +1,9 @@
+version=54;
+name="BRO Arsenal + Database";
+author="Spacelow";
+category="EdSubcat_Default";
+requiredAddons[]=
+{
+	"Desert",
+	"MRHMiscItems"
+};

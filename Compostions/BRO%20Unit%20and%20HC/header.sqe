@@ -1,0 +1,24 @@
+version=54;
+name="BRO Unit + HC";
+author="Spacelow";
+category="EdSubcat_Default";
+requiredAddons[]=
+{
+	"A3_Modules_F_Curator_Curator",
+	"A3_Data_F_Curator_Virtual",
+	"A3_Characters_F",
+	"CUP_Weapons_CZ75",
+	"CUP_Weapons_Ammunition",
+	"A3_Weapons_F",
+	"tfar_handhelds",
+	"CUP_Creatures_Military_USArmy",
+	"cfp_headgear",
+	"cfp_uniforms",
+	"ace_realisticnames",
+	"ace_medical_treatment",
+	"ace_trenches",
+	"ace_hearing",
+	"A3_Characters_F_Mark",
+	"ace_explosives",
+	"Desert"
+};

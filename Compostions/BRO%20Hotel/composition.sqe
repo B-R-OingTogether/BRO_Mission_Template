@@ -1,0 +1,697 @@
+version=54;
+center[]={12124.117,158.8,12648.859};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Layer";
+		name="BRO Valkerye + Vehicles";
+		class Entities
+		{
+			items=6;
+			class Item0
+			{
+				dataType="Layer";
+				name="Valkerye Layout (Green)";
+				class Entities
+				{
+					items=1;
+					class Item0
+					{
+						dataType="Layer";
+						name="Hotel Layout (Green)";
+						class Entities
+						{
+							items=8;
+							class Item0
+							{
+								dataType="Comment";
+								class PositionInfo
+								{
+									position[]={12.173828,0.19999695,-6.2792969};
+									angles[]={-0,0.45691758,0};
+								};
+								title="Valkerye Layout and Airframes";
+								description="If there is space at the HQ, this is the layout Valkerye prefers. Copy and paste this layout and aircraft across to your mission. Note: all settings for the vehicles have been set appropriately. " \n "" \n "If there isn't space, attempt to lay out the Valkerye LZ's with adequate space and similar to as it is displayed here. ";
+								id=115;
+							};
+							class Item1
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={39.90918,0.11611938,-5.0693359};
+									angles[]={0.013327583,5.0617051,0};
+								};
+								side="Empty";
+								flags=4;
+								class Attributes
+								{
+									disableSimulation=1;
+								};
+								id=117;
+								type="Land_HelipadSquare_F";
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=1;
+								};
+							};
+							class Item2
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={12.398438,0.099990845,6.1943359};
+									angles[]={-0,3.4923027,0};
+								};
+								side="Empty";
+								flags=4;
+								class Attributes
+								{
+									disableSimulation=1;
+								};
+								id=123;
+								type="Land_HelipadSquare_F";
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=1;
+								};
+							};
+							class Item3
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-18.869141,0.14212036,-8.2001953};
+									angles[]={6.2698579,0.35568222,0};
+								};
+								side="Empty";
+								flags=4;
+								class Attributes
+								{
+									disableSimulation=1;
+								};
+								id=129;
+								type="Land_HelipadSquare_F";
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=1;
+								};
+							};
+							class Item4
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-9.7910156,0.13188171,14.421875};
+									angles[]={0.013332055,3.4892974,6.2698536};
+								};
+								side="Empty";
+								flags=4;
+								class Attributes
+								{
+									disableSimulation=1;
+								};
+								id=135;
+								type="Land_HelipadSquare_F";
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=1;
+								};
+							};
+							class Item5
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={39.384766,3.6593781,-4.6162109};
+									angles[]={0.013327583,5.061697,0};
+								};
+								side="Empty";
+								flags=4;
+								class Attributes
+								{
+									init=" [this] call ace_fastroping_fnc_equipFRIES;";
+								};
+								id=141;
+								type="CFP_B_USRANGERS_CH_47F_WDL_01";
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ace_repair_editorLoadedWheels";
+										expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=10;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="ammoBox";
+										expression="[_this,_value] call bis_fnc_initAmmoBox;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="[[[[],[]],[[],[]],[[""ToolKit"",""slr_slingload_CargoSling""],[1,1]],[[],[]]],false]";
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="ace_isMedicalVehicle";
+										expression="_this setVariable [""ace_medical_isMedicalVehicle"", _value, true]";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=1;
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="ace_cargo_space";
+										expression="[_this, _value] call ace_cargo_fnc_setSpace;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=60;
+											};
+										};
+									};
+									class Attribute4
+									{
+										property="mrh_AmmoCrateNumberItem";
+										expression="_this setVariable ['MRH_numberOfammo',_value,true]";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="10";
+											};
+										};
+									};
+									nAttributes=5;
+								};
+							};
+							class Item6
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={4.6484375,0.099990845,-15.413086};
+									angles[]={-0,0.35567525,0};
+								};
+								side="Empty";
+								flags=4;
+								class Attributes
+								{
+									disableSimulation=1;
+								};
+								id=144;
+								type="Land_HelipadSquare_F";
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=1;
+								};
+							};
+							class Item7
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-34.083008,0.00045776367,10.706055};
+									angles[]={-0,1.926886,0.013327583};
+								};
+								side="Empty";
+								flags=4;
+								class Attributes
+								{
+									disableSimulation=1;
+								};
+								id=150;
+								type="Land_HelipadSquare_F";
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=1;
+								};
+							};
+						};
+						id=112;
+						atlOffset=-0.0090484619;
+					};
+				};
+				id=111;
+				atlOffset=-0.0090484619;
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-9.1972656,1.9738007,16.027344};
+					angles[]={0.013332055,3.4825461,6.2698536};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+				};
+				id=156;
+				type="CFP_B_USRANGERS_MH_60L_DAP_4Pylons_WDL_01";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="ace_repair_editorLoadedWheels";
+						expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=10;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="ammoBox";
+						expression="[_this,_value] call bis_fnc_initAmmoBox;";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="[[[[""CUP_launch_M136_Loaded""],[1]],[[""CUP_M136_M""],[2]],[[""ToolKit""],[1]],[[],[]]],false]";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="ace_isMedicalVehicle";
+						expression="_this setVariable [""ace_medical_isMedicalVehicle"", _value, true]";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=1;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="ace_cargo_space";
+						expression="[_this, _value] call ace_cargo_fnc_setSpace;";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=60;
+							};
+						};
+					};
+					class Attribute4
+					{
+						property="mrh_AmmoCrateNumberItem";
+						expression="_this setVariable ['MRH_numberOfammo',_value,true]";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="10";
+							};
+						};
+					};
+					nAttributes=5;
+				};
+			};
+			class Item2
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={4.1210938,1.9709015,-17.038086};
+					angles[]={-0,0.34892443,0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+				};
+				id=164;
+				type="CFP_B_USRANGERS_MH_60L_DAP_4Pylons_WDL_01";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="ace_repair_editorLoadedWheels";
+						expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=10;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="ammoBox";
+						expression="[_this,_value] call bis_fnc_initAmmoBox;";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="[[[[""CUP_launch_M136_Loaded""],[1]],[[""CUP_M136_M""],[2]],[[""ToolKit""],[1]],[[],[]]],false]";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="ace_isMedicalVehicle";
+						expression="_this setVariable [""ace_medical_isMedicalVehicle"", _value, true]";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=1;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="ace_cargo_space";
+						expression="[_this, _value] call ace_cargo_fnc_setSpace;";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=60;
+							};
+						};
+					};
+					class Attribute4
+					{
+						property="mrh_AmmoCrateNumberItem";
+						expression="_this setVariable ['MRH_numberOfammo',_value,true]";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="10";
+							};
+						};
+					};
+					nAttributes=5;
+				};
+			};
+			class Item3
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-34.81543,2.3726044,10.956055};
+					angles[]={-0,1.9091446,0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+				};
+				id=165;
+				type="UK3CB_BAF_Apache_AH1_AT";
+			};
+			class Item4
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-18.831055,2.0016785,-9.0595703};
+					angles[]={6.2698579,0.32366067,0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+				};
+				id=157;
+				type="CFP_B_USRANGERS_MH_60L_DAP_2Pylons_WDL_01";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="ace_repair_editorLoadedWheels";
+						expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=10;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="ammoBox";
+						expression="[_this,_value] call bis_fnc_initAmmoBox;";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="[[[[""CUP_launch_M136_Loaded""],[1]],[[""CUP_M136_M""],[2]],[[""ToolKit""],[1]],[[],[]]],false]";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="ace_isMedicalVehicle";
+						expression="_this setVariable [""ace_medical_isMedicalVehicle"", _value, true]";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=1;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="ace_cargo_space";
+						expression="[_this, _value] call ace_cargo_fnc_setSpace;";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=60;
+							};
+						};
+					};
+					class Attribute4
+					{
+						property="mrh_AmmoCrateNumberItem";
+						expression="_this setVariable ['MRH_numberOfammo',_value,true]";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="10";
+							};
+						};
+					};
+					nAttributes=5;
+				};
+			};
+			class Item5
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={13.126953,1.9709015,7.2949219};
+					angles[]={-0,3.4603989,0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+				};
+				id=158;
+				type="CFP_B_USRANGERS_UH_60M_WDL_01";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="ace_repair_editorLoadedWheels";
+						expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=10;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="ammoBox";
+						expression="[_this,_value] call bis_fnc_initAmmoBox;";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="[[[[""CUP_launch_M136_Loaded""],[1]],[[""CUP_M136_M""],[2]],[[""ToolKit""],[1]],[[],[]]],false]";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="ace_isMedicalVehicle";
+						expression="_this setVariable [""ace_medical_isMedicalVehicle"", _value, true]";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=1;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="ace_cargo_space";
+						expression="[_this, _value] call ace_cargo_fnc_setSpace;";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=60;
+							};
+						};
+					};
+					class Attribute4
+					{
+						property="mrh_AmmoCrateNumberItem";
+						expression="_this setVariable ['MRH_numberOfammo',_value,true]";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="10";
+							};
+						};
+					};
+					nAttributes=5;
+				};
+			};
+		};
+		id=166;
+		atlOffset=-0.01902771;
+	};
+};

@@ -1,0 +1,11 @@
+version=54;
+name="BRO Trucks";
+author="Spacelow";
+category="EdSubcat_Default";
+requiredAddons[]=
+{
+	"CFP_B_USMC_DES",
+	"CFP_B_USARMY_2003_WDL",
+	"UK3CB_BAF_Vehicles_MAN",
+	"Desert"
+};

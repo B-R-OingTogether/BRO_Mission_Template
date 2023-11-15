@@ -1,0 +1,688 @@
+version=54;
+center[]={5792.8838,5.8651962,544.78387};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Layer";
+		name="BRO Golf + Hotel";
+		class Entities
+		{
+			items=2;
+			class Item0
+			{
+				dataType="Layer";
+				name="Hotel Layout (Green)";
+				class Entities
+				{
+					items=1;
+					class Item0
+					{
+						dataType="Layer";
+						name="Hotel Layout (Green)_1";
+						class Entities
+						{
+							items=3;
+							class Item0
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={1.2241211,2.1784887,0.49914551};
+									angles[]={6.2826962,5.7815604,0.0027576203};
+								};
+								side="Empty";
+								flags=4;
+								class Attributes
+								{
+									init="call{[this, 20, 5000] execVM ""actions\engineering\supplies\refuel_tanker.sqf"";" \n "[this, 20, 10000] execVM ""actions\engineering\supplies\refuel_tanker_base.sqf"";" \n "" \n "call{[this, 20, 1000] execVM ""actions\engineering\supplies\resupply_ammo.sqf"";" \n "[this, 20, 2000] execVM ""actions\engineering\supplies\resupply_ammo_base.sqf"";}" \n "}" \n "";
+									textures="USMC";
+								};
+								id=1243;
+								type="CFP_B_USMC_MTVR_Refuel_DES_01";
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ace_repair_editorLoadedWheels";
+										expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=6;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="VehicleCustomization";
+										expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+										class Value
+										{
+											class data
+											{
+												singleType="ARRAY";
+												class value
+												{
+													items=2;
+													class Item0
+													{
+														class data
+														{
+															singleType="ARRAY";
+														};
+													};
+													class Item1
+													{
+														class data
+														{
+															singleType="ARRAY";
+															class value
+															{
+																items=2;
+																class Item0
+																{
+																	class data
+																	{
+																		singleType="STRING";
+																		value="hideTarp";
+																	};
+																};
+																class Item1
+																{
+																	class data
+																	{
+																		singleType="SCALAR";
+																		value=0;
+																	};
+																};
+															};
+														};
+													};
+												};
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="ammoBox";
+										expression="[_this,_value] call bis_fnc_initAmmoBox;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+											};
+										};
+									};
+									class Attribute4
+									{
+										property="ace_refuel_fuelCargo";
+										expression="if (_value != (if (isNumber (configOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this, _value] call ace_refuel_fnc_makeSource}";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=10000;
+											};
+										};
+									};
+									class Attribute5
+									{
+										property="mrh_AmmoCrateNumberItem";
+										expression="_this setVariable ['MRH_numberOfammo',_value,true]";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="10";
+											};
+										};
+									};
+									class Attribute6
+									{
+										property="ace_cargo_space";
+										expression="[_this, _value] call ace_cargo_fnc_setSpace;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=50;
+											};
+										};
+									};
+									nAttributes=7;
+								};
+							};
+							class Item1
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-3.5024414,2.190197,-2.5042114};
+									angles[]={0.0021293017,5.7681913,0.0034732053};
+								};
+								side="Empty";
+								flags=4;
+								class Attributes
+								{
+									init="call{this addAction [""<t color='#BDB76B' size='2.0' font='EtelkaMonospacePro'>AMMUNITION</t>"", ""actions\hotel\spawn_hotel_ammo.sqf"", nil, 1.5, true, true, """", ""true"", 10];  " \n " " \n "this addAction [""<t color='#add8e6' size='2.0' font='EtelkaMonospacePro'>MEDICAL</t>"", ""actions\hotel\spawn_hotel_medical.sqf"", nil, 1.5, true, true, """", ""true"", 10];     " \n "  " \n "this addAction [""<t color='#30336B' size='2.0' font='EtelkaMonospacePro'>EXPLOSIVES CRATE</t>"", ""actions\hotel\spawn_engi_explosives.sqf"", nil, 1.5, true, true, """", ""true"", 10]; " \n " " \n "this addAction [""<t color='#eb3434' size='2.0' font='EtelkaMonospacePro'>VEHICLE AMMO</t>"", ""actions\hotel\spawn_vehicle_ammo.sqf"", nil, 1.5, true, true, """", ""true"", 10]; " \n " " \n "this addAction [""<t color='#30336B' size='2.0' font='EtelkaMonospacePro'>PORTABLE LAUNCHERS</t>"", ""actions\shelldrake\spawn_shell_portable_launchers.sqf"", nil, 1.5, true, true, """", ""true"", 10];  " \n " " \n "this addAction [""<t color='#5f8932' size='2.0' font='EtelkaMonospacePro'>MORTAR COMPONENTS</t>"", ""actions\shelldrake\spawn_shell_mortars.sqf"", nil, 1.5, true, true, """", ""true"", 10];  " \n " " \n "this addAction [""<t color='#6b3c6b' size='2.0' font='EtelkaMonospacePro'>STATICS</t>"", ""actions\shelldrake\spawn_shell_statics.sqf"", nil, 1.5, true, true, """", ""true"", 10];  " \n " " \n "this addAction [""<t color='#A0522D' size='2.0' font='EtelkaMonospacePro'>MORTAR AMMUNITION</t>"", ""actions\shelldrake\spawn_shell_mortar_ammo.sqf"", nil, 1.5, true, true, """", ""true"", 10]; " \n " " \n "this addAction [""<t color='#9a5317' size='2.0' font='EtelkaMonospacePro'>L16 MORTAR AMMUNITION</t>"", ""actions\shelldrake\spawn_shell_l16mortar_ammo.sqf"", nil, 1.5, true, true, """", ""true"", 10]; " \n " " \n "this addAction [""<t color='#c42c04' size='2.0' font='EtelkaMonospacePro'>M6 MORTAR AMMUNITION</t>"", ""actions\shelldrake\spawn_shell_m6mortar_ammo.sqf"", nil, 1.5, true, true, """", ""true"", 10]; " \n " " \n "this addAction [""<t color='#53239C' size='2.0' font='EtelkaMonospacePro'>M119 AMMUNITION</t>"",  ""actions\shelldrake\spawn_shell_m119.sqf"", nil, 1.5, true, true, """", ""true"", 10]; " \n "" \n "this addAction [""<t color='#06F7F2' size='2.0' font='EtelkaMonospacePro'>EMPTY CRATE</t>"",  ""actions\hotel\spawn_empty.sqf"", nil, 1.5, true, true, """", ""true"", 10];}";
+									textures="USMC";
+								};
+								id=1269;
+								type="CFP_B_USARMY_2003_MTVR_WDL_01";
+								atlOffset=4.7683716e-007;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="VehicleCustomization";
+										expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+										class Value
+										{
+											class data
+											{
+												singleType="ARRAY";
+												class value
+												{
+													items=2;
+													class Item0
+													{
+														class data
+														{
+															singleType="ARRAY";
+															class value
+															{
+																items=2;
+																class Item0
+																{
+																	class data
+																	{
+																		singleType="STRING";
+																		value="USMC";
+																	};
+																};
+																class Item1
+																{
+																	class data
+																	{
+																		singleType="SCALAR";
+																		value=1;
+																	};
+																};
+															};
+														};
+													};
+													class Item1
+													{
+														class data
+														{
+															singleType="ARRAY";
+															class value
+															{
+																items=2;
+																class Item0
+																{
+																	class data
+																	{
+																		singleType="STRING";
+																		value="hideTarp";
+																	};
+																};
+																class Item1
+																{
+																	class data
+																	{
+																		singleType="SCALAR";
+																		value=0;
+																	};
+																};
+															};
+														};
+													};
+												};
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="ace_repair_editorLoadedWheels";
+										expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=6;
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="ammoBox";
+										expression="[_this,_value] call bis_fnc_initAmmoBox;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+											};
+										};
+									};
+									class Attribute4
+									{
+										property="ace_cargo_space";
+										expression="[_this, _value] call ace_cargo_fnc_setSpace;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=50;
+											};
+										};
+									};
+									class Attribute5
+									{
+										property="mrh_AmmoCrateNumberItem";
+										expression="_this setVariable ['MRH_numberOfammo',_value,true]";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="10";
+											};
+										};
+									};
+									nAttributes=6;
+								};
+							};
+							class Item2
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-7.4306641,2.8645477,-8.0620117};
+									angles[]={0.0020420351,5.783742,0.0031066861};
+								};
+								side="Empty";
+								flags=4;
+								class Attributes
+								{
+									init="call{this addAction [""<t color='#ca2c92' size='2.0' font='EtelkaMonospacePro'>FOB AMMO</t>"", ""actions\hotel\spawn_fob_ammo.sqf"", nil, 1.5, true, true, """", ""true"", 10];" \n "" \n "this addAction [""<t color='#465b73' size='2.0' font='EtelkaMonospacePro'>FOB REPAIR</t>"", ""actions\hotel\spawn_fob_repair.sqf"", nil, 1.5, true, true, """", ""true"", 10];" \n " " \n "this addAction [""<t color='#30336B' size='2.0' font='EtelkaMonospacePro'>FOB FUEL</t>"", ""actions\hotel\spawn_fob_fuel.sqf"", nil, 1.5, true, true, """", ""true"", 10];" \n "" \n "this addAction [""<t color='#e4eeed' size='2.0' font='EtelkaMonospacePro'>SMALL FUEL SUPPLY</t>"", ""actions\hotel\spawn_small_fuel_supply.sqf"", nil, 1.5, true, true, """", ""true"", 10]; " \n "" \n "this addAction [""<t color='#eb3434' size='2.0' font='EtelkaMonospacePro'>FOB ARSENAL</t>"", ""actions\hotel\spawn_fob_arsenal.sqf"", nil, 1.5, true, true, """", ""true"", 10];" \n "" \n "this addAction [""<t color='#add8e6' size='2.0' font='EtelkaMonospacePro'>REARM AMMO CRATE</t>"", ""actions\hotel\spawn_rearm_ammo_crate.sqf"", nil, 1.5, true, true, """", ""true"", 10];" \n "" \n "this addAction [""<t color='#BDB76B' size='2.0' font='EtelkaMonospacePro'>REFUEL BARRELS</t>"", ""actions\hotel\spawn_refuel_barrels.sqf"", nil, 1.5, true, true, """", ""true"", 10]; " \n "" \n "this addAction [""<t color='#ca2c92' size='2.0' font='EtelkaMonospacePro'>Section Static - GMG</t>"", ""actions\hotel\spawn_section_gmg.sqf"", nil, 1.5, true, true, """", ""true"", 10];" \n "" \n "this addAction [""<t color='#465b73' size='2.0' font='EtelkaMonospacePro'>Section Static - HMG</t>"", ""actions\hotel\spawn_section_hmg.sqf"", nil, 1.5, true, true, """", ""true"", 10];" \n " " \n "this addAction [""<t color='#30336B' size='2.0' font='EtelkaMonospacePro'>Section Static - MMG</t>"", ""actions\hotel\spawn_section_l7.sqf"", nil, 1.5, true, true, """", ""true"", 10];" \n "" \n "this addAction [""<t color='#ca2c92' size='2.0' font='EtelkaMonospacePro'>Ammo - GMG</t>"", ""actions\hotel\spawn_section_gmg_ammo.sqf"", nil, 1.5, true, true, """", ""true"", 10];" \n "" \n "this addAction [""<t color='#465b73' size='2.0' font='EtelkaMonospacePro'>Ammo - HMG</t>"", ""actions\hotel\spawn_section_hmg_ammo.sqf"", nil, 1.5, true, true, """", ""true"", 10];" \n " " \n "this addAction [""<t color='#30336B' size='2.0' font='EtelkaMonospacePro'>Ammo - MMG</t>"", ""actions\hotel\spawn_section_l7_ammo.sqf"", nil, 1.5, true, true, """", ""true"", 10]; " \n " " \n "}";
+									textures="Green";
+								};
+								id=1270;
+								type="UK3CB_BAF_MAN_HX58_Cargo_Sand_B";
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="VehicleCustomization";
+										expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+										class Value
+										{
+											class data
+											{
+												singleType="ARRAY";
+												class value
+												{
+													items=2;
+													class Item0
+													{
+														class data
+														{
+															singleType="ARRAY";
+															class value
+															{
+																items=2;
+																class Item0
+																{
+																	class data
+																	{
+																		singleType="STRING";
+																		value="Green";
+																	};
+																};
+																class Item1
+																{
+																	class data
+																	{
+																		singleType="SCALAR";
+																		value=1;
+																	};
+																};
+															};
+														};
+													};
+													class Item1
+													{
+														class data
+														{
+															singleType="ARRAY";
+															class value
+															{
+																items=2;
+																class Item0
+																{
+																	class data
+																	{
+																		singleType="STRING";
+																		value="ClanLogo_Hide";
+																	};
+																};
+																class Item1
+																{
+																	class data
+																	{
+																		singleType="SCALAR";
+																		value=0;
+																	};
+																};
+															};
+														};
+													};
+												};
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="ace_repair_editorLoadedWheels";
+										expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=6;
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="ammoBox";
+										expression="[_this,_value] call bis_fnc_initAmmoBox;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+											};
+										};
+									};
+									class Attribute4
+									{
+										property="ace_cargo_space";
+										expression="[_this, _value] call ace_cargo_fnc_setSpace;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=50;
+											};
+										};
+									};
+									class Attribute5
+									{
+										property="mrh_AmmoCrateNumberItem";
+										expression="_this setVariable ['MRH_numberOfammo',_value,true]";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="10";
+											};
+										};
+									};
+									nAttributes=6;
+								};
+							};
+						};
+						id=1239;
+						atlOffset=0.0022072792;
+					};
+				};
+				id=1238;
+				atlOffset=0.0022072792;
+			};
+			class Item1
+			{
+				dataType="Layer";
+				name="Golf Ammo Truck";
+				class Entities
+				{
+					items=2;
+					class Item0
+					{
+						dataType="Comment";
+						class PositionInfo
+						{
+							position[]={3.7661133,0.028700829,6.7252197};
+							angles[]={0,1.1535269,0.0015822123};
+						};
+						title="Shelldrake Ammo Truck";
+						id=1287;
+					};
+					class Item1
+					{
+						dataType="Layer";
+						name="Golf Ammo Truck_1";
+						class Entities
+						{
+							items=1;
+							class Item0
+							{
+								dataType="Layer";
+								name="Golf Ammo Truck_2";
+								class Entities
+								{
+									items=1;
+									class Item0
+									{
+										dataType="Object";
+										class PositionInfo
+										{
+											position[]={5.9145508,2.1942196,3.3495483};
+											angles[]={6.2824869,5.7496381,0.0022689279};
+										};
+										side="Empty";
+										flags=4;
+										class Attributes
+										{
+											init="[this, {   " \n "    [_this, 20, 15000] execVM ""actions\engineering\supplies\resupply_ammo.sqf"";  " \n " [_this, 20, 30000] execVM ""actions\engineering\supplies\resupply_ammo_base.sqf"";  " \n "}] remoteExec [""call"", 0, this]; " \n " " \n "[this, 30000] call ace_rearm_fnc_setSupplyCount;  ";
+											textures="USMC";
+											disableSimulation=1;
+											dynamicSimulation=1;
+										};
+										id=1290;
+										type="CFP_B_USMC_MTVR_Ammo_DES_01";
+										atlOffset=-4.7683716e-007;
+										class CustomAttributes
+										{
+											class Attribute0
+											{
+												property="VehicleCustomization";
+												expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+												class Value
+												{
+													class data
+													{
+														singleType="ARRAY";
+														class value
+														{
+															items=2;
+															class Item0
+															{
+																class data
+																{
+																	singleType="ARRAY";
+																};
+															};
+															class Item1
+															{
+																class data
+																{
+																	singleType="ARRAY";
+																	class value
+																	{
+																		items=2;
+																		class Item0
+																		{
+																			class data
+																			{
+																				singleType="STRING";
+																				value="hideTarp";
+																			};
+																		};
+																		class Item1
+																		{
+																			class data
+																			{
+																				singleType="SCALAR";
+																				value=0;
+																			};
+																		};
+																	};
+																};
+															};
+														};
+													};
+												};
+											};
+											class Attribute1
+											{
+												property="ace_repair_editorLoadedWheels";
+												expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
+												class Value
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=6;
+													};
+												};
+											};
+											class Attribute2
+											{
+												property="ammoBox";
+												expression="[_this,_value] call bis_fnc_initAmmoBox;";
+												class Value
+												{
+													class data
+													{
+														singleType="STRING";
+														value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+													};
+												};
+											};
+											class Attribute3
+											{
+												property="ace_cargo_space";
+												expression="[_this, _value] call ace_cargo_fnc_setSpace;";
+												class Value
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=150;
+													};
+												};
+											};
+											class Attribute4
+											{
+												property="mrh_AmmoCrateNumberItem";
+												expression="_this setVariable ['MRH_numberOfammo',_value,true]";
+												class Value
+												{
+													class data
+													{
+														singleType="STRING";
+														value="10";
+													};
+												};
+											};
+											class Attribute5
+											{
+												property="ace_rearm_rearmCargo";
+												expression="if (_value != (if (isNumber (configOf _this >> ""ace_rearm_defaultSupply"")) then {getNumber (configOf _this >> ""ace_rearm_defaultSupply"")} else {-1})) then {[_this, _value] call ace_rearm_fnc_makeSource}";
+												class Value
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=30000;
+													};
+												};
+											};
+											nAttributes=6;
+										};
+									};
+								};
+								id=1289;
+								atlOffset=-4.7683716e-007;
+							};
+						};
+						id=1288;
+						atlOffset=-4.7683716e-007;
+					};
+				};
+				id=1286;
+				atlOffset=-0.00025320053;
+			};
+		};
+		id=1295;
+		atlOffset=0.76954746;
+	};
+};

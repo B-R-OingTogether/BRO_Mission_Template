@@ -1,0 +1,11 @@
+version=54;
+name="BRO Hotel";
+author="Spacelow";
+category="EdSubcat_Default";
+requiredAddons[]=
+{
+	"Desert",
+	"A3_Structures_F_Mil_Helipads",
+	"CFP_B_USRANGERS_WDL",
+	"UK3CB_BAF_Vehicles_Apache"
+};

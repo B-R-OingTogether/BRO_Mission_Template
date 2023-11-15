@@ -1,0 +1,745 @@
+version=54;
+center[]={4170.0732,396.99451,6584.0088};
+class items
+{
+	items=2;
+	class Item0
+	{
+		dataType="Layer";
+		name="BRO Shelldrake";
+		class Entities
+		{
+			items=4;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-3.597168,0.94989014,-5.2250977};
+					angles[]={6.0838466,0,6.2607136};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					init="[this, true, [0, 3, 0], 90] call ace_dragging_fnc_setCarryable;" \n "[this, true, [0, 3, 0], 90] call ace_dragging_fnc_setDraggable;" \n "[this, 3] call ace_cargo_fnc_setSize; ";
+					disableSimulation=1;
+					dynamicSimulation=1;
+				};
+				id=882;
+				type="CFP_B_CAF_D30_01";
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={4.144043,1.0372009,-5.7250977};
+					angles[]={6.159379,0.085329145,0.01244407};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					init="[this, true, [0, 3, 0], 90] call ace_dragging_fnc_setCarryable;" \n "[this, true, [0, 3, 0], 90] call ace_dragging_fnc_setDraggable;" \n "[this, 3] call ace_cargo_fnc_setSize; ";
+					disableSimulation=1;
+					dynamicSimulation=1;
+				};
+				id=883;
+				type="CUP_B_M119_HIL";
+			};
+			class Item2
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={3.9296875,1.3056946,4.050293};
+					angles[]={6.2390308,6.2731862,6.2760091};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					textures="Woodland";
+					disableSimulation=1;
+					dynamicSimulation=1;
+				};
+				id=884;
+				type="CFP_B_USRANGERS_M1129_MC_MK19_CROWS_Slat_WDL_01";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="VehicleCustomization";
+						expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+						class Value
+						{
+							class data
+							{
+								singleType="ARRAY";
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="STRING";
+														value="Woodland";
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="STRING";
+														value="HideSlat_Desert";
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=0;
+													};
+												};
+											};
+										};
+									};
+								};
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="ammoBox";
+						expression="[_this,_value] call bis_fnc_initAmmoBox;";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="[[[[""CUP_arifle_M4A1_SOMMOD_black"",""CUP_launch_M136_Loaded"",""FirstAidKit"",""Medikit""],[2,1,10,1]],[[""CUP_30Rnd_556x45_Stanag"",""CUP_M136_M"",""SmokeShell"",""SmokeShellOrange"",""Chemlight_red""],[20,2,2,2,2]],[[""ToolKit""],[1]],[[""CFP_Kitbag_MCam_Grn""],[4]]],false]";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="mrh_AmmoCrateNumberItem";
+						expression="_this setVariable ['MRH_numberOfammo',_value,true]";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="10";
+							};
+						};
+					};
+					nAttributes=3;
+				};
+			};
+			class Item3
+			{
+				dataType="Layer";
+				name="BRO Shelldrake Vehicle_1";
+				class Entities
+				{
+					items=1;
+					class Item0
+					{
+						dataType="Layer";
+						name="Shelldrake Vehicle_1";
+						class Entities
+						{
+							items=2;
+							class Item0
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-4.2817383,3.1231079,3.203125};
+									angles[]={6.1648059,6.2730765,0.049466271};
+								};
+								side="Empty";
+								flags=4;
+								class Attributes
+								{
+									textures="BAF_Green";
+									disableSimulation=1;
+									dynamicSimulation=1;
+								};
+								id=887;
+								type="UK3CB_BAF_LandRover_Soft_Green_A";
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="VehicleCustomization";
+										expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+										class Value
+										{
+											class data
+											{
+												singleType="ARRAY";
+												class value
+												{
+													items=2;
+													class Item0
+													{
+														class data
+														{
+															singleType="ARRAY";
+															class value
+															{
+																items=2;
+																class Item0
+																{
+																	class data
+																	{
+																		singleType="STRING";
+																		value="BAF_Green";
+																	};
+																};
+																class Item1
+																{
+																	class data
+																	{
+																		singleType="SCALAR";
+																		value=1;
+																	};
+																};
+															};
+														};
+													};
+													class Item1
+													{
+														class data
+														{
+															singleType="ARRAY";
+															class value
+															{
+																items=34;
+																class Item0
+																{
+																	class data
+																	{
+																		singleType="STRING";
+																		value="AerialMountL_Hide";
+																	};
+																};
+																class Item1
+																{
+																	class data
+																	{
+																		singleType="SCALAR";
+																		value=0;
+																	};
+																};
+																class Item2
+																{
+																	class data
+																	{
+																		singleType="STRING";
+																		value="AerialMountR_Hide";
+																	};
+																};
+																class Item3
+																{
+																	class data
+																	{
+																		singleType="SCALAR";
+																		value=1;
+																	};
+																};
+																class Item4
+																{
+																	class data
+																	{
+																		singleType="STRING";
+																		value="AerialSL_Hide";
+																	};
+																};
+																class Item5
+																{
+																	class data
+																	{
+																		singleType="SCALAR";
+																		value=0;
+																	};
+																};
+																class Item6
+																{
+																	class data
+																	{
+																		singleType="STRING";
+																		value="AerialSR_Hide";
+																	};
+																};
+																class Item7
+																{
+																	class data
+																	{
+																		singleType="SCALAR";
+																		value=1;
+																	};
+																};
+																class Item8
+																{
+																	class data
+																	{
+																		singleType="STRING";
+																		value="AirIntakeSnorkel_Hide";
+																	};
+																};
+																class Item9
+																{
+																	class data
+																	{
+																		singleType="SCALAR";
+																		value=1;
+																	};
+																};
+																class Item10
+																{
+																	class data
+																	{
+																		singleType="STRING";
+																		value="Canvas_Hide";
+																	};
+																};
+																class Item11
+																{
+																	class data
+																	{
+																		singleType="SCALAR";
+																		value=0;
+																	};
+																};
+																class Item12
+																{
+																	class data
+																	{
+																		singleType="STRING";
+																		value="ClanLogo_Hide";
+																	};
+																};
+																class Item13
+																{
+																	class data
+																	{
+																		singleType="SCALAR";
+																		value=0;
+																	};
+																};
+																class Item14
+																{
+																	class data
+																	{
+																		singleType="STRING";
+																		value="HeadlightGrills_Hide";
+																	};
+																};
+																class Item15
+																{
+																	class data
+																	{
+																		singleType="SCALAR";
+																		value=0;
+																	};
+																};
+																class Item16
+																{
+																	class data
+																	{
+																		singleType="STRING";
+																		value="Sign_Hide";
+																	};
+																};
+																class Item17
+																{
+																	class data
+																	{
+																		singleType="SCALAR";
+																		value=1;
+																	};
+																};
+																class Item18
+																{
+																	class data
+																	{
+																		singleType="STRING";
+																		value="AerialAtuL_Hide";
+																	};
+																};
+																class Item19
+																{
+																	class data
+																	{
+																		singleType="SCALAR";
+																		value=1;
+																	};
+																};
+																class Item20
+																{
+																	class data
+																	{
+																		singleType="STRING";
+																		value="AerialAtuR_Hide";
+																	};
+																};
+																class Item21
+																{
+																	class data
+																	{
+																		singleType="SCALAR";
+																		value=1;
+																	};
+																};
+																class Item22
+																{
+																	class data
+																	{
+																		singleType="STRING";
+																		value="AerialFL_Hide";
+																	};
+																};
+																class Item23
+																{
+																	class data
+																	{
+																		singleType="SCALAR";
+																		value=1;
+																	};
+																};
+																class Item24
+																{
+																	class data
+																	{
+																		singleType="STRING";
+																		value="AerialFR_Hide";
+																	};
+																};
+																class Item25
+																{
+																	class data
+																	{
+																		singleType="SCALAR";
+																		value=1;
+																	};
+																};
+																class Item26
+																{
+																	class data
+																	{
+																		singleType="STRING";
+																		value="Flag_Hide";
+																	};
+																};
+																class Item27
+																{
+																	class data
+																	{
+																		singleType="SCALAR";
+																		value=0;
+																	};
+																};
+																class Item28
+																{
+																	class data
+																	{
+																		singleType="STRING";
+																		value="Mudguards_Hide";
+																	};
+																};
+																class Item29
+																{
+																	class data
+																	{
+																		singleType="SCALAR";
+																		value=0;
+																	};
+																};
+																class Item30
+																{
+																	class data
+																	{
+																		singleType="STRING";
+																		value="Radio_Hide";
+																	};
+																};
+																class Item31
+																{
+																	class data
+																	{
+																		singleType="SCALAR";
+																		value=1;
+																	};
+																};
+																class Item32
+																{
+																	class data
+																	{
+																		singleType="STRING";
+																		value="SideLockers_Hide";
+																	};
+																};
+																class Item33
+																{
+																	class data
+																	{
+																		singleType="SCALAR";
+																		value=1;
+																	};
+																};
+															};
+														};
+													};
+												};
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="ammoBox";
+										expression="[_this,_value] call bis_fnc_initAmmoBox;";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+											};
+										};
+									};
+									class Attribute2
+									{
+										property="ace_cargo_space";
+										expression="[_this, _value] call ace_cargo_fnc_setSpace;";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=150;
+											};
+										};
+									};
+									class Attribute3
+									{
+										property="mrh_AmmoCrateNumberItem";
+										expression="_this setVariable ['MRH_numberOfammo',_value,true]";
+										class Value
+										{
+											class data
+											{
+												singleType="STRING";
+												value="10";
+											};
+										};
+									};
+									nAttributes=4;
+								};
+							};
+							class Item1
+							{
+								dataType="Comment";
+								class PositionInfo
+								{
+									position[]={-0.21337891,1.2803345,-1.0302734};
+									angles[]={6.2378726,3.9998319,0.04889765};
+								};
+								title="Shelldrake";
+								id=888;
+								atlOffset=0.65310669;
+							};
+						};
+						id=886;
+						atlOffset=0.30599976;
+					};
+				};
+				id=885;
+				atlOffset=0.30599976;
+			};
+		};
+		id=889;
+		atlOffset=0.093902588;
+	};
+	class Item1
+	{
+		dataType="Layer";
+		name="BRO Shelldrake";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Layer";
+				name="BRO Golf + Hotel_3";
+				class Entities
+				{
+					items=2;
+					class Item0
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={0.093261719,1.5065308,1.953125};
+							angles[]={6.1648059,3.1436839,0.01244407};
+						};
+						side="Empty";
+						flags=4;
+						class Attributes
+						{
+							init="call{this addAction [""<t color='#5f8932' size='1.0' font='EtelkaMonospacePro'>MORTAR COMPONENTS</t>"", ""actions\shelldrake\spawn_shell_mortars.sqf"", nil, 1.5, true, true, """", ""true"", 10];" \n "" \n "this addAction [""<t color='#A0522D' size='1.0' font='EtelkaMonospacePro'>MORTAR AMMUNITION</t>"", ""actions\shelldrake\spawn_shell_mortar_ammo.sqf"", nil, 1.5, true, true, """", ""true"", 10]; " \n " " \n "this addAction [""<t color='#9a5317' size='1.0' font='EtelkaMonospacePro'>L16 MORTAR AMMUNITION</t>"", ""actions\shelldrake\spawn_shell_l16mortar_ammo.sqf"", nil, 1.5, true, true, """", ""true"", 10]; " \n "" \n "this addAction [""<t color='#c42c04' size='1.0' font='EtelkaMonospacePro'>M6 MORTAR AMMUNITION</t>"", ""actions\shelldrake\spawn_shell_m6mortar_ammo.sqf"", nil, 1.5, true, true, """", ""true"", 10];" \n " " \n "this setObjectTexture [0, """"];}";
+							disableSimulation=1;
+							dynamicSimulation=1;
+						};
+						id=895;
+						type="Land_WheelieBin_01_F";
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="mrh_hackAndCollectDataHackDuration";
+								expression="_this setVariable ['MRH_objectHackDuration',_value,true]";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="10";
+									};
+								};
+							};
+							class Attribute1
+							{
+								property="mrh_hackAndCollectPicsHack";
+								expression="_this setVariable ['MRH_objectHackPicturesReceived',_value,true]";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="[""MRH_poweredByMilsimtools"",""MRH_WP_M4""]";
+									};
+								};
+							};
+							class Attribute2
+							{
+								property="mrh_search_CodeFound";
+								expression="_this setVariable ['MRH_object_Found_code',_value,true]";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="true";
+									};
+								};
+							};
+							class Attribute3
+							{
+								property="mrh_AmmoCrateNumberItem";
+								expression="_this setVariable ['MRH_numberOfammo',_value,true]";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="10";
+									};
+								};
+							};
+							class Attribute4
+							{
+								property="mrh_search_nameFound";
+								expression="_this setVariable ['MRH_object_Found',_value,true]";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="";
+									};
+								};
+							};
+							class Attribute5
+							{
+								property="mrh_hackAndCollectDataHackFileSize";
+								expression="_this setVariable ['MRH_objectHackFileSize',_value,true]";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="10";
+									};
+								};
+							};
+							class Attribute6
+							{
+								property="mrh_hackAndCollectDataHackData";
+								expression="_this setVariable ['MRH_objectHackDataReceived',_value,true]";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="[""MRH_SdTabTestDataEntry"",""MRH_WP_M4""]";
+									};
+								};
+							};
+							nAttributes=7;
+						};
+					};
+					class Item1
+					{
+						dataType="Comment";
+						class PositionInfo
+						{
+							position[]={-0.14746094,1.0411072,2.6201172};
+							angles[]={6.1841984,3.8956599,6.2760091};
+						};
+						title="Shelldrake Sign Spawner";
+						description="Make sure you have this somewhere so shelldrake can get set up";
+						id=896;
+						atlOffset=-0.015136719;
+					};
+				};
+				id=894;
+				atlOffset=-0.0080871582;
+			};
+		};
+		id=897;
+		atlOffset=-0.0080871582;
+	};
+};
