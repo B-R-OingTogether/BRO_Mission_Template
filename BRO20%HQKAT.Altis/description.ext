@@ -1,6 +1,12 @@
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Player Respawn Upon Load In ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Respawn Lines ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
-respawnOnStart = 0; //This means that players will spawn where their character in located at the mission start. Change the 0 to 1 if you want players to select their respawn position upon load in. 
+respawnOnStart = 0; //This means that players will spawn where their character in located at the mission start. Change the 0 to 1 if you want players to select their respawn position upon load in.
+
+//Define if Revive mode is enabled.
+reviveMode = 1; // Default: 0
+//0 - disabled
+//1 - enabled
+//2 - controlled by player attributes
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ PDA/Intel Required Lines ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
