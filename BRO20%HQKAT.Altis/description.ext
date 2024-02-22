@@ -26,7 +26,7 @@ joinUnassigned = 1; // 0 = players forced into role on join
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Loading screen parameters ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
 author			= "B.R.O.";
-loadScreen		= "z\BROMedia\data\BRO.paa"; // BRO logo by default or Mission Image if you want to change it
+loadScreen		= "\z\BROMedia\data\BRO.paa"; // BRO logo by default or Mission Image if you want to change it
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Arsenal Required Lines ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
@@ -45,6 +45,7 @@ class Extended_PreInit_EventHandlers {
 
 class Extended_PostInit_EventHandlers {
     class BRO_DRAG_CARRY {
-        init = "ACE_maxWeightDrag = nil; ACE_maxWeightCarry = nil;"
+        init = "ace_dragging_ignoreWeight = 1;"
+               "ace_dragging_ignoreWeightCarry = 1;"
     };
 };
