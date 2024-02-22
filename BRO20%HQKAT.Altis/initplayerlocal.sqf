@@ -21,8 +21,8 @@ player addEventHandler ["killed", {[false, false, false] call ace_spectator_fnc_
 ["InitializePlayer", [player, true]] call BIS_fnc_dynamicGroups;
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ View Distance Settings ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
-setViewDistance 3000;
-setObjectViewDistance 2500;
+setViewDistance 4000;
+setObjectViewDistance 3750;
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Curator/Zeus Creation ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
