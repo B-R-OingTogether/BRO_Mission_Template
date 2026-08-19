@@ -18,15 +18,17 @@ enableDebugConsole[] = {"76561198245384032","76561198013527843"}; // Jup, Space 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Server Global Settings ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
 disabledAI = 1; // Disables ai from filling slots, 0: disabled - 1: enabled.. //
-disableChannels[] = {1,2,3,4,5,6}; // 0 = Global, 1 = Side, 2 = Command, 3 = Group, 4 = Vehicle, 5 = Direct, 6 = System. Admin/server/BattlEye can still use Global.
+disableChannels[] = {2,3,4,5,6}; // 0 = Global, 1 = Side, 2 = Command, 3 = Group, 4 = Vehicle, 5 = Direct, 6 = System. Admin/server/BattlEye can still use Global.
 aiKills = 0; // disable scorelist for AI players
 joinUnassigned = 1; // 0 = players forced into role on join
 
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Loading screen parameters ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
-author			= "B.R.O.";
-loadScreen		= "\z\BROMedia\data\BRO.paa"; // BRO logo by default or Mission Image if you want to change it
+author = "B.R.O. - BATTALION ROUTINE ORDER";
+onLoadName = "OPERATION - ";
+onLoadMission = "";
+loadScreen = "\BROMedia\data\BRO.paa"; // BRO logo by default or Mission Image if you want to change it
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Arsenal Required Lines ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
@@ -48,4 +50,16 @@ class Extended_PostInit_EventHandlers {
         init = "ace_dragging_ignoreWeight = 1;"
                "ace_dragging_ignoreWeightCarry = 1;"
     };
+};
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Music ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+class CfgMusic
+{
+	tracks[] = {};
+class soundOpening
+	{
+	name = "Opening";	
+	sound[] = {"intel\Opening.ogg", 1, 1, 100 };	//The 100 indicates the distance at which
+	titles[] = {};
+	};
 };
