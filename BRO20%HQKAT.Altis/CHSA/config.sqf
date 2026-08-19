@@ -87,7 +87,7 @@ _staffRadio = ["TFAR_anprc152"] + _infantryRadio + _backpackRadio;
 _hackingTool = ["MRH_HackingTool"];
 _laserDesignators = ["Laserbatteries","Laserdesignator","Laserdesignator_03","Laserdesignator_01_khk_F"];
 
-_staffItems = ["ACE_HuntIR_monitor"] + _generalItems + _hackingTool + _laserDesignators + _staffRifles
+_staffItems = ["ACE_HuntIR_monitor"] + _generalItems + _hackingTool + _laserDesignators + _staffRifles;
 /***********************************************************************************************/
 
 /************************************* Class Specific Gear *************************************/
