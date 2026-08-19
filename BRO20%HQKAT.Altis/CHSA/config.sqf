@@ -117,26 +117,26 @@ _hotelEquipment = ["slr_slingload_CargoSling","rhsusf_ihadss","H_PilotHelmetHeli
 
 
 //Role Equipment Assignment
-_riflemanItems = 				_generalRifles 		+ _generalEquipment 	+ _generalItems 	+ _infantryRadio 	+ _infantryMedical 	+ _riflemanBackpacks 	+ _infantryLaunchers;
-_officerItems = 				_generalRifles		+ _generalEquipment 	+ _staffItems 		+ _staffRadio 		+ _sectionMedical 	+ _staffBackpacks		+ _infantryLaunchers	+ _officerClothes;
-_sectionstaffitems =			_generalRifles		+ _generalEquipment 	+ _staffItems 		+ _staffRadio 		+ _sectionMedical 	+ _staffBackpacks;
-_sectionmedicItems =			_generalRifles		+ _generalEquipment 	+ _generalItems 	+ _infantryRadio 	+ _doctorMedical 	+ _medicBackpacks		+ _staffRifles;
-_sectionmaawsItems =			_generalRifles		+ _generalEquipment 	+ _generalItems 	+ _infantryRadio 	+ _infantryMedical	+ _maawsBackpacks		+ _matLaunchers			+ _amRifles;
-_mediummachinegunnerItems = 	_generalRifles		+ _generalEquipment 	+ _generalItems 	+ _infantryRadio 	+ _infantryMedical 	+ _mmgBackpacks			+ _mmgRifles;
-_doctorItems =					_generalRifles		+ _generalEquipment 	+ _generalItems 	+ _infantryRadio 	+ _doctorMedical	+ _staffBackpacks 		+ _medicBackpacks;
-_crewmanItems =					_generalRifles		+ _generalEquipment 	+ _staffItems 		+ _staffRadio 		+ _infantryMedical	+ _riflemanBackpacks 	+ _crewmanBackpacks		+ _marksmanEquipment + _lmgRifles	+ _mmgRifles	+ _matLaunchers		+ _crewmanEquipment;
-_crewmanmedicItems =			_generalRifles		+ _generalEquipment 	+ _staffItems 		+ _infantryRadio 	+ _sectionMedical	+ _riflemanBackpacks 	+ _crewmanBackpacks		+ _marksmanEquipment + _lmgRifles	+ _mmgRifles	+ _matLaunchers		+ _crewmanEquipment;
-_marksmanItems =				_generalRifles		+ _generalEquipment 	+ _generalItems 	+ _infantryRadio 	+ _infantryMedical	+ _marksmanEquipment;
-_engineersectionstaffItems = 	_generalRifles		+ _generalEquipment 	+ _staffItems 		+ _staffRadio 		+ _infantryMedical 	+ _staffBackpacks		+ _vanguardEquipment	+ _hackingTool;
-_engineerItems =				_generalRifles		+ _generalEquipment 	+ _generalItems 	+ _infantryRadio 	+ _infantryMedical 	+ _vanguardEquipment 	+ _hackingTool;
-_shelldrakesectionstaffItems =	_generalRifles		+ _generalEquipment 	+ _staffItems 		+ _staffRadio 		+ _infantryMedical 	+ _staffBackpacks		+ _shelldrakeEquipment;
-_gunnerItems =					_generalRifles		+ _generalEquipment 	+ _generalItems 	+ _staffRadio 		+ _infantryMedical 	+ _shelldrakeEquipment;
-_medicalsectionstaffItems =		_generalRifles		+ _generalEquipment 	+ _staffItems 		+ _staffRadio 		+ _doctorMedical 	+ _staffBackpacks		+ _medicBackpacks;
-_medicsectionItems =			_generalRifles		+ _generalEquipment 	+ _generalItems 	+ _staffRadio 		+ _doctorMedical	+ _medicBackpacks		+ _staffRifles;
-_hotelpilotItems =				_generalRifles		+ _generalEquipment 	+ _staffItems 		+ _staffRadio 		+ _doctorMedical 	+ _staffBackpacks		+ _staffRifles 	    	+ _hotelEquipment;
-_ProntoStaff = 				    _generalRifles 		+ _generalEquipment 	+ _generalItems 	+ _staffRadio 	    + _infantryMedical 	+ _riflemanBackpacks 	+ _ProntoEquipment 	    + _infantryLaunchers; 
-_Prontomedic = 				    _generalRifles 		+ _generalEquipment 	+ _generalItems 	+ _infantryRadio 	+ _doctorMedical 	+ _riflemanBackpacks 	+ _ProntoEquipment 	    + _infantryLaunchers;
-_Prontosoldier = 			    _generalRifles 		+ _generalEquipment 	+ _generalItems 	+ _infantryRadio 	+ _infantryMedical 	+ _riflemanBackpacks 	+ _ProntoEquipment 	    + _infantryLaunchers;
+_riflemanItems = 				_generalRifles 		+ _generalEquipment 	+ _generalItems 	+ _infantryRadio 	+ _riflemanBackpacks    + _infantryLaunchers;
+_officerItems = 				_generalRifles		+ _generalEquipment 	+ _staffItems 		+ _staffRadio 	 	+ _staffBackpacks	    + _infantryLaunchers	+ _officerClothes;
+_sectionstaffitems =			_generalRifles		+ _generalEquipment 	+ _staffItems 		+ _staffRadio 		+ _staffBackpacks;
+_sectionmedicItems =			_generalRifles		+ _generalEquipment 	+ _generalItems 	+ _infantryRadio  	+ _medicBackpacks		+ _staffRifles;
+_sectionmaawsItems =			_generalRifles		+ _generalEquipment 	+ _generalItems 	+ _infantryRadio 	+ _maawsBackpacks		+ _matLaunchers			+ _amRifles;
+_mediummachinegunnerItems = 	_generalRifles		+ _generalEquipment 	+ _generalItems 	+ _infantryRadio  	+ _mmgBackpacks			+ _mmgRifles;
+_doctorItems =					_generalRifles		+ _generalEquipment 	+ _generalItems 	+ _infantryRadio 	+ _staffBackpacks 		+ _medicBackpacks;
+_crewmanItems =					_generalRifles		+ _generalEquipment 	+ _staffItems 		+ _staffRadio 		+ _riflemanBackpacks 	+ _crewmanBackpacks		+ _marksmanEquipment    + _lmgRifles	+ _mmgRifles	+ _matLaunchers		+ _crewmanEquipment;
+_crewmanmedicItems =			_generalRifles		+ _generalEquipment 	+ _staffItems 		+ _infantryRadio 	+ _riflemanBackpacks 	+ _crewmanBackpacks		+ _marksmanEquipment    + _lmgRifles	+ _mmgRifles	+ _matLaunchers		+ _crewmanEquipment;
+_marksmanItems =				_generalRifles		+ _generalEquipment 	+ _generalItems 	+ _infantryRadio 	+ _marksmanEquipment;
+_engineersectionstaffItems = 	_generalRifles		+ _generalEquipment 	+ _staffItems 		+ _staffRadio 	 	+ _staffBackpacks		+ _vanguardEquipment	+ _hackingTool;
+_engineerItems =				_generalRifles		+ _generalEquipment 	+ _generalItems 	+ _infantryRadio  	+ _vanguardEquipment 	+ _hackingTool;
+_shelldrakesectionstaffItems =	_generalRifles		+ _generalEquipment 	+ _staffItems 		+ _staffRadio 	 	+ _staffBackpacks		+ _shelldrakeEquipment;
+_gunnerItems =					_generalRifles		+ _generalEquipment 	+ _generalItems 	+ _staffRadio 	 	+ _shelldrakeEquipment;
+_medicalsectionstaffItems =		_generalRifles		+ _generalEquipment 	+ _staffItems 		+ _staffRadio 		+ _staffBackpacks		+ _medicBackpacks;
+_medicsectionItems =			_generalRifles		+ _generalEquipment 	+ _generalItems 	+ _staffRadio 		+ _medicBackpacks		+ _staffRifles;
+_hotelpilotItems =				_generalRifles		+ _generalEquipment 	+ _staffItems 		+ _staffRadio 		+ _staffBackpacks		+ _staffRifles 	    	+ _hotelEquipment;
+_ProntoStaff = 				    _generalRifles 		+ _generalEquipment 	+ _generalItems 	+ _staffRadio 	   	+ _riflemanBackpacks 	+ _ProntoEquipment 	    + _infantryLaunchers; 
+_Prontomedic = 				    _generalRifles 		+ _generalEquipment 	+ _generalItems 	+ _infantryRadio  	+ _riflemanBackpacks 	+ _ProntoEquipment 	    + _infantryLaunchers;
+_Prontosoldier = 			    _generalRifles 		+ _generalEquipment 	+ _generalItems 	+ _infantryRadio  	+ _riflemanBackpacks 	+ _ProntoEquipment 	    + _infantryLaunchers;
 
 /***********************************************************************************************/
 
