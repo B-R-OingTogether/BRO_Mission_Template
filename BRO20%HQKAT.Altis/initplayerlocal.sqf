@@ -37,3 +37,7 @@ setObjectViewDistance 2500;
 	};
 } foreach allcurators;
 
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Zeus Tracer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+execVM "zeusTracer.sqf";
+

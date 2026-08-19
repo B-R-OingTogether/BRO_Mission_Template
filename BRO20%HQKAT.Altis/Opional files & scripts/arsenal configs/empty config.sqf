@@ -79,15 +79,15 @@ _generalItems = _chemlights + _handFlares + _spraypaint + _cosmeticFacewear + _n
 
 //Radios
 //Make sure all radio's use the same Encryption
-_infantryRadio = ["TFAR_anprc152"];
-_backpackRadio = ["TFAR_anarc210","TFAR_mr3000_bwmod","TFAR_mr3000_bwmod_tropen","TFAR_rt1523g_sage","TFAR_rt1523g_green","TFAR_rt1523g_fabric","TFAR_rt1523g_bwmod","TFAR_rt1523g_black","TFAR_rt1523g_big_rhs","TFAR_rt1523g_big_bwmod_tropen","TFAR_rt1523g_big_bwmod","TFAR_rt1523g_big","TFAR_rt1523g","TFAR_rt1523g_rhs","tfw_ilbe_DD_arid","tfw_ilbe_DD_black","tfw_ilbe_DD_coy","tfw_ilbe_DD_gr","tfw_ilbe_DD_wd2","tfw_ilbe_DD_ocp","tfw_ilbe_DD_mc","tfw_ilbe_DD_mct","tfw_ilbe_DD_wd","tfw_ilbe_DD_d","tfw_ilbe_DD_alpine"];
+_infantryRadio = [""];
+_backpackRadio = [""];
 _staffRadio = [""] + _infantryRadio + _backpackRadio;
 
 //Hacking Tool and Designators
-_hackingTool = ["MRH_HackingTool"];
+_hackingTool = [""];
 _laserDesignators = [""];
 
-_staffItems = ["ACE_HuntIR_monitor","B_UavTerminal"] + _generalItems + _hackingTool + _laserDesignators + _staffRifles
+_staffItems = [""] + _generalItems + _hackingTool + _laserDesignators + _staffRifles
 /***********************************************************************************************/
 
 /************************************* Class Specific Gear *************************************/
@@ -95,7 +95,7 @@ _staffItems = ["ACE_HuntIR_monitor","B_UavTerminal"] + _generalItems + _hackingT
 //Only small edits depending on mission parameters would occur here
 //Add class specific stuff here. E.g. Backpacks, range tables etc
 
-_officerClothes = ["_Watchcap_blk","MTF_UniformV2","MTF_UniformV1","tsp_gear_fast_mt_black","tsp_gear_fast_mt_black_peltor","U_CBRN_B_black","V_CBRN_B_black","V_CBRN_B_black","G_CBRN_B_black"];
+_officerClothes = [""];
 
 _riflemanBackpacks = [""];
 _staffBackpacks = [""];
@@ -107,13 +107,13 @@ _shelldrakeBackpacks = [""];
 
 _crewmanBackpacks = _riflemanBackpacks + _staffBackpacks + _medicBackpacks + _maawsBackpacks + _mmgBackpacks + _vanguardBackpacks	+ _shelldrakeBackpacks;
 
-_crewmanEquipment = ["H_HelmetCrew_B","H_HelmetCrew_I_E","U_B_Cav_Coveralls"];
+_crewmanEquipment = [""];
 _randomEquipment = [""];
-_ProntoEquipment = ["Laserdesignator","ibr_U_B_yul_M88","rhsgref_alice_webbing","rhsgref_wdl_alicepack","H_Booniehat_YU","rhsusf_shemagh_tan","aceax_textureOptions","ace_csw_kordCarryTripod","ace_csw_m3CarryTripodLow","ace_csw_m3CarryTripod","ace_csw_100Rnd_127x108_mag","ace_csw_100Rnd_127x108_mag_green","ace_csw_100Rnd_127x108_mag_red","ace_csw_100Rnd_127x108_mag_yellow","ace_compat_rhs_gref3_dshkm_carry","ace_compat_rhs_afrf3_kord_carry","ace_compat_rhs_usf3_m2_carry"];
+_ProntoEquipment = [""];
 _marksmanEquipment = [""];
 _vanguardEquipment = [""];
 _shelldrakeEquipment = [""];
-_hotelEquipment = ["slr_slingload_CargoSling","rhsusf_ihadss","H_PilotHelmetHeli_B","RHS_jetpilot_usaf","H_PilotHelmetFighter_B","rhssaf_uniform_heli_pilot","U_B_HeliPilotCoveralls","U_B_PilotCoveralls"];
+_hotelEquipment = [""];
 
 
 //Role Equipment Assignment

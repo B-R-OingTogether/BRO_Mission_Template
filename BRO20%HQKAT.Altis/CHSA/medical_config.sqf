@@ -1,34 +1,39 @@
 _arsenalType = "medical";
 _target = sideUnknown;
-//_specNames = ["Rifleman", "Officer", "Section Staff", "Section Medic", "Section MAAWS", "Medium Machinegunner", "Doctor", "Crewman", "Crewman Medic", "Marksman", "Engineer Section Staff", "Engineer", "Shelldrake Section Staff", "Gunner", "Medical Section Staff", "Medical section Personal", "Rotory Pilot"];
-//_specSlots = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1];
+//_specNames = ["Rifleman", "Officer", "Section Staff", "Section Medic", "Section MAAWS", "Medium Machinegunner", "Doctor", "Crewman", "Crewman Medic", "Marksman", "Engineer Section Staff", "Engineer", "Shelldrake Section Staff", "Gunner", "Medical Section Staff", "Medical section Personal", "Rotory Pilot", "ProntoStaff", "Prontomedic","Prontosoldier"];
+//_specSlots = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1];
 _specTypes = [
-	["B_Soldier_lite_F"],	//  Rifleman
-	["B_officer_F"],		// 	Officer	(Zeus,BHQ)
-	["B_Soldier_SL_F"],		//	Section Staff	
-	["B_medic_F"],			// 	Section Medic
-	["B_soldier_AT_F"],		// 	Section MAAWS
-	["B_HeavyGunner_F"],	//	Medium Machinegunner
-	["B_Patrol_Medic_F"],	//	Doctor lvl Medic
-	["B_crew_F"],			//	Crewman (Vanguard)
-	["B_Soldier_A_F"],		//	Crewman Medic (Vanguard)
-	["B_soldier_M_F"],		//	Markman (AUXILLERY)
-	["B_soldier_exp_F"],	//	Engineer Section Staff
-	["B_engineer_F"],		//	Engineer
-	["B_support_MG_F"],		//	Section Staff (ShellDrake) 
-	["B_support_Mort_F"],	//	Gunner (ShellDrake)
-	["B_recon_medic_F"],	//	Medical Section Staff
-	["B_recon_medic_F"],	//	Medical section Personal
-	["B_Helipilot_F"]		//	Rotory (Hotel)
+	["B_Soldier_lite_F"],	   //   Rifleman
+	["B_officer_F"],		   // 	Officer	(Zeus,BHQ)
+	["B_Soldier_SL_F"],		   //	Section Staff	
+	["B_medic_F"],			   // 	Section Medic
+	["B_soldier_AT_F"],		   // 	Section MAAWS
+	["B_HeavyGunner_F"],	   //	Medium Machinegunner
+	["B_Patrol_Medic_F"],	   //	Doctor lvl Medic
+	["B_crew_F"],			   //	Crewman (Vanguard)
+	["B_Soldier_A_F"],		   //	Crewman Medic (Vanguard)
+	["B_soldier_M_F"],		   //	Markman (AUXILLERY)
+	["B_soldier_exp_F"],	   //	Engineer Section Staff
+	["B_engineer_F"],		   //	Engineer
+	["B_support_MG_F"],		   //	Section Staff (ShellDrake) 
+	["B_support_Mort_F"],	   //	Gunner (ShellDrake)
+	["B_recon_medic_F"],	   //	Medical Section Staff
+	["B_recon_medic_F"],	   //	Medical section Personal
+	["B_Helipilot_F"],		   //	Rotory (Hotel)
+	["B_Survivor_F"],		   //   Pronto Staff
+	["B_Soldier_unarmed_F"],   //   Pronto Medic
+	["B_Deck_Crew_F"]		   //   Pronto Rifleman
 ];
 
 //Misc
-_masks = ["G_AirPurifyingRespirator_02_black_F","G_AirPurifyingRespirator_02_olive_F","G_AirPurifyingRespirator_02_sand_F","G_RegulatorMask_F","G_Respirator_blue_F","G_Respirator_white_F","G_Respirator_yellow_F","G_AirPurifyingRespirator_01_F","SP_GasMask_Black","max_gasmask","max_gasmask_G","MRH_HaloMask","MRH_HaloMaskNoESS"];
-//Medical Supplies
-_infantryMedical = ["Attachable_Helistretcher","ACE_elasticBandage","ACE_packingBandage","ACE_quikclot","kat_bloodIV_A_N","kat_bloodIV_AB_N","kat_bloodIV_B_N","kat_bloodIV_AB_N_250","kat_bloodIV_B_N_250","kat_bloodIV_A_N_500","kat_bloodIV_AB_N_500","kat_bloodIV_B_N_500","kat_chestSeal","kat_PainkillerItem","ACE_splint","ACE_tourniquet","kat_Bubble_Wrap_Item","kat_bloodIV_A_N_250","kat_Painkiller","kat_Bubble_Wrap","kat_Armband_Kat_Item","kat_armband_kat","kat_stretcherBag","ACE_fieldDressing","RyanZombiesAntiVirusTemporary_Item"] + _masks;
-_sectionMedical = ["RyanZombiesAntiVirusCure_Item","kat_IV_16","kat_aatKit","kat_accuvac","ACE_adenosine","kat_X_AED","kat_amiodarone","kat_CarbonateItem","kat_Armband_Doctor_Item","kat_Armband_Kat_Item","kat_Armband_Medic_Item","kat_Armband_Red_Cross_Item","kat_atropine","kat_bloodIV_O_N","kat_bloodIV_O_N_250","kat_bloodIV_O_N_500","kat_BVM","kat_CaffeineItem","ACE_epinephrine","kat_IO_FAST","kat_etomidate","kat_fentanyl","KAT_Empty_bloodIV_250","KAT_Empty_bloodIV_500","kat_flumazenil","kat_guedel","kat_ketamine","kat_larynx","kat_lidocaine","kat_lorazepam","ACE_morphine","kat_nalbuphine","kat_naloxone","kat_ncdKit","kat_nitroglycerin","kat_norepinephrine","kat_PervitinItem","kat_phenylephrine","kat_oxygenTank_150_Item","kat_oxygenTank_300_Item","kat_Pulseoximeter","ACE_salineIV","ACE_salineIV_250","ACE_salineIV_500","kat_stethoscope","ACE_surgicalKit","ACE_tourniquet","kat_TXA","kat_oxygenTank_150","kat_oxygenTank_300","kat_Pervitin","kat_Caffeine","kat_Carbonate","kat_AED","kat_EACA","ACE_bodyBag","ACE_personalAidKit"] + _infantryMedical;
-_doctorMedical = ["kat_ketamine"] + _infantryMedical + _sectionMedical;
+_masks = [""];
 
+//Medical Supplies
+
+//Medical Supplies
+_infantryMedical = ["ACM_SuctionBag","ACM_IV_14g","ACM_IV_16g","ACM_ChestSeal","ACM_ElasticWrap","ACM_EmergencyTraumaDressing","ACM_NCDKit","ACM_NPA","ACM_PressureBandage","ACM_SAMSplint","ACE_tourniquet","ACE_Canteen","ACE_Canteen_Half","ACE_WaterBottle","ACE_WaterBottle_Half","ACM_AmmoniaInhalant","ACM_Paracetamol"];
+_sectionMedical = ["ACM_OxygenTank_425","ACM_IV_16g","ACM_ChestSeal","ACM_ElasticWrap","ACM_EmergencyTraumaDressing","ACM_NCDKit","ACM_NPA","ACM_PressureBandage","ACM_SAMSplint","ACE_tourniquet","ACE_Canteen","ACE_Canteen_Half","ACE_WaterBottle","ACE_WaterBottle_Half","ACM_BloodBag_ON_1000","ACM_BloodBag_ON_250","ACM_BloodBag_ON_500","ACE_bodyBag","ACM_Vial_CalciumChloride","ACM_SuctionBag","ACM_Vial_Epinephrine","ACM_IO_EZ","ACM_IO_FAST","ACM_FieldBloodTransfusionKit_500","ACM_IGel","ACM_OPA","ACM_PocketBVM","ACM_OPA","ACM_PocketBVM","ACM_Syringe_1","ACE_morphine","ACM_AmmoniaInhalant","ACM_Paracetamol","ACM_Inhaler_Penthrox"] + _infantryMedical;
+_doctorMedical = ["ACM_IV_14g","ACM_IV_16g","ACM_ChestSeal","ACM_ElasticWrap","ACM_EmergencyTraumaDressing","ACM_NCDKit","ACM_NPA","ACM_PressureBandage","ACM_SAMSplint","ACE_tourniquet","ACE_Canteen","ACE_Canteen_Half","ACE_WaterBottle","ACE_WaterBottle_Half","ACM_ACCUVAC","ACM_Vial_Adenosine","ACM_Vial_Amiodarone","ACM_Vial_Atropine","ACM_AED","ACM_BVM","ACM_BloodBag_ON_1000","ACM_BloodBag_ON_250","ACM_BloodBag_ON_500","ACE_bodyBag","ACE_bodyBag_blue","ACM_Vial_CalciumChloride","ACM_ChestTubeKit","ACM_CricKit","ACM_SuctionBag","ACE_epinephrine","ACM_Vial_Epinephrine","ACM_Vial_Ertapenem","ACM_Vial_Esmolol","ACM_IO_EZ","ACM_IO_FAST","ACM_Lozenge_Fentanyl","ACM_Vial_Fentanyl","ACM_FieldBloodTransfusionKit_250","ACM_FieldBloodTransfusionKit_500","ACM_IGel","ACM_Vial_Ketamine","ACM_Vial_Lidocaine","ACM_Vial_Morphine","ACM_Spray_Naloxone","ACM_Vial_Ondansetron","ACM_OPA","ACM_PocketBVM","ACM_PressureCuff","ACM_PulseOximeter","ACE_salineIV_250","ACM_Stethoscope","ACE_salineIV_500","ACE_salineIV","ACM_Vial_TXA","ACM_ThoracostomyKit","ACM_Syringe_5","ACM_Syringe_3","ACM_Syringe_1","ACM_Syringe_10","ACE_suture","ACE_surgicalKit","ACE_plasmaIV_500","ACE_plasmaIV_250","ACE_plasmaIV","ACE_personalAidKit","ACM_Autoinjector_ATNA","ACM_Autoinjector_Midazolam","ACE_morphine","ACM_AmmoniaInhalant","ACM_Paracetamol","ACM_Inhaler_Penthrox","ACM_OxygenTank_425"] + _infantryMedical + _sectionMedical;
 
 
 /***********************************************************************************************/
