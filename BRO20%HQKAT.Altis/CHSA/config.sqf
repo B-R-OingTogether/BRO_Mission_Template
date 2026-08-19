@@ -84,7 +84,7 @@ _backpackRadio = ["TFAR_anarc210","TFAR_mr3000_bwmod","TFAR_mr3000_bwmod_tropen"
 _staffRadio = ["TFAR_anprc152"] + _infantryRadio + _backpackRadio;
 
 //Hacking Tool and Designators
-_hackingTool = [""MRH_HackingTool"];
+_hackingTool = ["MRH_HackingTool"];
 _laserDesignators = ["Laserbatteries","Laserdesignator","Laserdesignator_03","Laserdesignator_01_khk_F"];
 
 _staffItems = ["ACE_HuntIR_monitor"] + _generalItems + _hackingTool + _laserDesignators + _staffRifles
