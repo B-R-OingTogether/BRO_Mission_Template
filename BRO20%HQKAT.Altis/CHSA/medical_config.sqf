@@ -26,7 +26,7 @@ _specTypes = [
 ];
 
 //Misc
-_masks = [""];
+_masks = ["MRH_HaloMask","MRH_HaloMaskNoESS","G_AirPurifyingRespirator_01_nofilter_F","G_AirPurifyingRespirator_01_F"];
 
 //Medical Supplies
 
