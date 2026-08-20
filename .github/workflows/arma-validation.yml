@@ -44,7 +44,8 @@ jobs:
       - name: Install SQFLint
         run: |
           python3 -m pip install --upgrade pip
-          python3 -m pip install --user sqflint
+          python3 -m pip install pipx
+          python3 -m pipx install sqflint --verbose
           python3 -m sqflint --version
 
       # ------------------------------------------------------------
