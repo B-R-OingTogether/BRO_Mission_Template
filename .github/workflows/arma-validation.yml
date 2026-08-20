@@ -61,6 +61,9 @@ jobs:
         run: |
           set +e
 
+          # Ensure sqflint is installed
+          python3 -m pip install sqflint
+
           mkdir -p validation
          
           SQF_FAILED=0
@@ -68,7 +71,6 @@ jobs:
           while IFS= read -r -d '' file; do
             echo "::group::SQFLint - $file"
 
-            python3 -m pip show sqflint
             python3 -m sqflint "$file"
 
             RESULT=$?
