@@ -36,7 +36,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5.2.0
         with:
-          python-version: "3.14" # Use a stable, widely-supported version
+          python-version: "3.13" # Use a stable, widely-supported version
 
       # ------------------------------------------------------------
       # Install SQFLint
