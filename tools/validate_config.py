@@ -43,6 +43,10 @@ CONFIG_EXTENSIONS = {
 CONFIG_FILENAMES = {
     "config.cpp",
     "description.ext",
+    "CfgFunctions.hpp",
+    "xeh_PreInit_EH.hpp",
+    "cfgMRH_SoldierTabData.hpp",
+    "cfgMRH_SoldierTabIntelPictures.hpp",
 }
 
 
