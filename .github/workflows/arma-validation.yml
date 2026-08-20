@@ -60,7 +60,7 @@ jobs:
           while IFS= read -r -d '' file; do
             echo "::group::SQFLint - $file"
 
-            sqflint "$file"  # Changed from: python3 -m sqflint "$file"
+            python3 -m sqflint "$file"
 
             RESULT=$?
 
