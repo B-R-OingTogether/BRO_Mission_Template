@@ -44,8 +44,8 @@ jobs:
       - name: Install SQFLint
         run: |
           python3 -m pip install --upgrade pip
-          python3 -m pip install sqflint
-          python3 -m sqflint --version  # Verify installation succeeded
+          pip install sqflint
+          sqflint --version  # Verify installation succeeded
           
       # ------------------------------------------------------------
       # Run SQFLint against SQF files
@@ -60,7 +60,7 @@ jobs:
           while IFS= read -r -d '' file; do
             echo "::group::SQFLint - $file"
 
-            python3 -m sqflint "$file"
+            sqflint "$file"  # Changed from: python3 -m sqflint "$file"
 
             RESULT=$?
 
