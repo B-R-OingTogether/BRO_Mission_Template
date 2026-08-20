@@ -45,7 +45,7 @@ jobs:
         run: |
           python3 -m pip install --upgrade pip
           python3 -m pip install sqflint
-          python3 -m show sqflint  # Verify installation with pip
+          python3 -m pip show sqflint  # Verify installation with pip
 
       # ------------------------------------------------------------
       # Run SQFLint against SQF files
