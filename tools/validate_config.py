@@ -36,8 +36,9 @@ from pathlib import Path
 ROOT = Path(".").resolve()
 
 CONFIG_EXTENSIONS = {
+    ".cpp",
     ".hpp",
-    ".inc",
+    ".ext",
 }
 
 CONFIG_FILENAMES = {
