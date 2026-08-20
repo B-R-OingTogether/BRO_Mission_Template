@@ -26,7 +26,7 @@ jobs:
       # Checkout
       # ------------------------------------------------------------
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
@@ -34,9 +34,9 @@ jobs:
       # Python
       # ------------------------------------------------------------
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
-          python-version: "3.12" # Use a stable, widely-supported version
+          python-version: "3.12"
 
       # ------------------------------------------------------------
       # Install SQFLint
@@ -45,7 +45,6 @@ jobs:
         run: |
           python3 -m pip install --upgrade pip
           python3 -m pip install sqflint
-          python3 -m pip show sqflint  # Verify installation with pip
 
       # ------------------------------------------------------------
       # Run SQFLint against SQF files
