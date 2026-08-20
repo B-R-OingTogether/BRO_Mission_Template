@@ -1,4 +1,3 @@
-```yaml
 name: Arma 3 Validation
 
 on:
@@ -106,4 +105,3 @@ jobs:
           echo "Class structure: OK"
           echo ""
           echo "No validation errors were found."
-```
