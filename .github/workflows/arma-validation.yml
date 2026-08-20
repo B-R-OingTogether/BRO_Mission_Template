@@ -52,6 +52,7 @@ jobs:
       # Run SQFLint against SQF files
       # ------------------------------------------------------------
       - name: Run SQFLint
+        shell: bash
         run: |
           set +e
 
@@ -62,7 +63,7 @@ jobs:
           while IFS= read -r -d '' file; do
             echo "::group::SQFLint - $file"
 
-            python3 -m sqflint "$file"
+            sqflint "$file"
 
             RESULT=$?
 
