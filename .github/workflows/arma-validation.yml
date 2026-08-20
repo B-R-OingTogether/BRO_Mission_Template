@@ -1,0 +1,107 @@
+name: Arma 3 Validation
+
+on:
+  pull_request:
+    branches:
+      - main
+
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+  checks: write
+
+jobs:
+  validate:
+    name: Validate Arma 3 Scripts
+    runs-on: ubuntu-latest
+
+    steps:
+      # ------------------------------------------------------------
+      # Checkout
+      # ------------------------------------------------------------
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # ------------------------------------------------------------
+      # Python
+      # ------------------------------------------------------------
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      # ------------------------------------------------------------
+      # Install SQFLint
+      # ------------------------------------------------------------
+      - name: Install SQFLint
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install sqflint
+
+      # ------------------------------------------------------------
+      # Run SQFLint against SQF files
+      # ------------------------------------------------------------
+      - name: Run SQFLint
+        shell: bash
+        run: |
+          set +e
+
+          mkdir -p validation
+
+          SQF_FAILED=0
+
+          while IFS= read -r -d '' file; do
+            echo "::group::SQFLint - $file"
+
+            python -m sqflint "$file"
+
+            RESULT=$?
+
+            if [ $RESULT -ne 0 ]; then
+              SQF_FAILED=1
+            fi
+
+            echo "::endgroup::"
+
+          done < <(find . \
+            -type f \
+            -name "*.sqf" \
+            -not -path "./.git/*" \
+            -print0)
+
+          if [ $SQF_FAILED -ne 0 ]; then
+            echo "::error::SQFLint found SQF errors."
+            exit 1
+          fi
+
+      # ------------------------------------------------------------
+      # Validate Arma config / HPP files
+      # ------------------------------------------------------------
+      - name: Validate Arma config files
+        run: |
+          python tools/validate_arma_config.py
+
+      # ------------------------------------------------------------
+      # Summary
+      # ------------------------------------------------------------
+      - name: Validation successful
+        if: success()
+        run: |
+          echo "========================================"
+          echo " Arma 3 validation successful"
+          echo "========================================"
+          echo ""
+          echo "SQF files: OK"
+          echo "HPP/config files: OK"
+          echo "Bracket structure: OK"
+          echo "Class structure: OK"
+          echo ""
+          echo "No validation errors were found."
