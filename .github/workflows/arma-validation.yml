@@ -43,16 +43,10 @@ jobs:
       # ------------------------------------------------------------
       - name: Install SQFLint
         run: |
+          rm -rf ~/.cache/pip
           python3 -m pip install --upgrade pip
-          python3 -m pip install sqflint
-          
-      # ------------------------------------------------------------
-      # verification step to debug
-      # ------------------------------------------------------------    
-      - name: Verify Python and SQFLint
-        run: |
-          python3 --version
-          python3 -m pip show sqflint
+          python3 -m pip install sqflint --verbose
+          python3 -m sqflint --version
 
       # ------------------------------------------------------------
       # Run SQFLint against SQF files
@@ -60,9 +54,6 @@ jobs:
       - name: Run SQFLint
         run: |
           set +e
-
-          # Ensure sqflint is installed
-          python3 -m pip install sqflint
 
           mkdir -p validation
          
