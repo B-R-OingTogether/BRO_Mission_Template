@@ -26,7 +26,7 @@ jobs:
       # Checkout
       # ------------------------------------------------------------
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -34,7 +34,7 @@ jobs:
       # Python
       # ------------------------------------------------------------
       - name: Setup Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v4
         with:
           python-version: "3.12"
 
@@ -46,7 +46,7 @@ jobs:
           python3 -m pip cache purge
           python3 -m pip install --upgrade pip
           python3 -m pip install sqflint --verbose
-          python3 -m sqflint --version
+          pip show sqflint
 
       # ------------------------------------------------------------
       # Run SQFLint against SQF files
@@ -63,7 +63,7 @@ jobs:
           while IFS= read -r -d '' file; do
             echo "::group::SQFLint - $file"
 
-            sqflint "$file"
+            python3 -m sqflint "$file"
 
             RESULT=$?
 
