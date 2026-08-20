@@ -45,12 +45,19 @@ jobs:
         run: |
           python3 -m pip install --upgrade pip
           python3 -m pip install sqflint
+          
+      # ------------------------------------------------------------
+      # verification step to debug
+      # ------------------------------------------------------------    
+      - name: Verify Python and SQFLint
+        run: |
+          python --version
+          python -m pip show sqflint
 
       # ------------------------------------------------------------
       # Run SQFLint against SQF files
       # ------------------------------------------------------------
       - name: Run SQFLint
-        shell: bash
         run: |
           set +e
 
