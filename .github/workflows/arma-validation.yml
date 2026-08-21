@@ -76,7 +76,7 @@ jobs:
                       $file -match '\.sqf$' -or
                       $file -match '\.hpp$' -or
                       $file -match '\.ext$' -or
-                      $file -match '\.cpp$' -or
+                      $file -match '\.cpp$'
 
                   ) {
                       $files += $file
