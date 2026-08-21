@@ -827,20 +827,8 @@ def load_file_list(
 
 def main():
 
-    parser = argparse.ArgumentParser(
-        description=(
-            "Validate Arma 3 mission "
-            "configuration files."
-        )
-    )
-
-    parser.add_argument(
-        "--file-list",
-        help=(
-            "Validate only files listed "
-            "in this file."
-        ),
-    )
+    parser = argparse.ArgumentParser(description='Validate Arma 3 mission configuration files')
+    parser.add_argument('--file-list', required=True, help=('Path to file containing list of files to validate')
 
     args = parser.parse_args()
 
