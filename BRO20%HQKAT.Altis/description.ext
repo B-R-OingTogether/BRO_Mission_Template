@@ -9,7 +9,7 @@ respawnOnStart = 0; //This means that players will spawn where their character i
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Compositions Init Script ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
-zeusCompositionScriptLevel = 2;
+zeusCompositionScriptLevel = 2
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Zeus Debug Permissions ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
