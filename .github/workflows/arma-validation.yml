@@ -13,6 +13,8 @@ on:
 
 permissions:
   contents: read
+  pull-requests: write
+  checks: write 
 
 jobs:
   validate:
@@ -42,8 +44,11 @@ jobs:
       - name: Install SQFLint
         shell: pwsh
         run: |
-          python -m pip install --upgrade pip
-          python -m pip install sqflint
+          python3 -m pip cache purge
+          python3 -m pip install --upgrade pip
+          python3 -m pip install sqflint
+          # Verify installation
+          python3 -m sqflint --version
 
       # ---------------------------------------------------------
       # Find files that need checking
@@ -149,7 +154,7 @@ jobs:
               Write-Host "SQFLint: $file"
               Write-Host "========================================"
 
-              $output = python -m sqflint "$file" 2>&1
+              $output = python3 -m sqflint "$file" 2>&1
 
               $exitCode = $LASTEXITCODE
 
@@ -203,7 +208,7 @@ jobs:
         shell: pwsh
         run: |
 
-          python tools\validate_arma_config.py `
+          python3 tools\validate_arma_config.py `
               --file-list validation-files.txt
 
       # ---------------------------------------------------------
