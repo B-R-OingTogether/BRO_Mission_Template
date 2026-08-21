@@ -40,7 +40,7 @@ jobs:
       # Install SQFLint
       # ---------------------------------------------------------
       - name: Install SQFLint
-        shell: powershell
+        shell: pwsh
         run: |
           python -m pip install --upgrade pip
           python -m pip install sqflint
@@ -56,7 +56,7 @@ jobs:
       # ---------------------------------------------------------
       - name: Find files to validate
         id: files
-        shell: powershell
+        shell: pwsh
         run: |
 
           $files = @()
@@ -76,12 +76,8 @@ jobs:
                       $file -match '\.sqf$' -or
                       $file -match '\.hpp$' -or
                       $file -match '\.ext$' -or
-                      $file -match '(^|/)description\.ext$' -or
-                      $file -match '(^|/)config\.cpp$' -or
-                      $file -match '(^|/)CfgFunctions\.hpp$' -or
-                      $file -match '(^|/)xeh_PreInit_EH\.hpp$' -or
-                      $file -match '(^|/)cfgMRH_SoldierTabData\.hpp$' -or
-                      $file -match '(^|/)cfgMRH_SoldierTabIntelPictures\.hpp$'
+                      $file -match '\.cpp$' -or
+
                   ) {
                       $files += $file
                   }
@@ -98,12 +94,8 @@ jobs:
                           $_.Extension -ieq ".sqf" -or
                           $_.Extension -ieq ".hpp" -or
                           $_.Extension -ieq ".ext" -or
-                          $_.Name -ieq "description.ext" -or
-                          $_.Name -ieq "config.cpp" -or
-                          $_.Name -ieq "CfgFunctions.hpp" -or
-                          $_.Name -ieq "xeh_PreInit_EH.hpp" -or
-                          $_.Name -ieq "cfgMRH_SoldierTabData.hpp" -or
-                          $_.Name -ieq "cfgMRH_SoldierTabIntelPictures.hpp"
+                          $_.Extension -ieq ".cpp"
+
                       )
                   } |
                   ForEach-Object {
@@ -130,7 +122,7 @@ jobs:
               # Save paths for later steps.
               $files | Out-File `
                   -FilePath "$env:GITHUB_WORKSPACE\validation-files.txt" `
-                  -Encoding utf8
+                  -Encoding utf8NoBOM
           }
 
       # ---------------------------------------------------------
@@ -138,7 +130,7 @@ jobs:
       # ---------------------------------------------------------
       - name: Validate SQF
         if: steps.files.outputs.has_files == 'true'
-        shell: powershell
+        shell: pwsh
         run: |
 
           $failed = $false
@@ -208,7 +200,7 @@ jobs:
       # ---------------------------------------------------------
       - name: Validate Arma config files
         if: steps.files.outputs.has_files == 'true'
-        shell: powershell
+        shell: pwsh
         run: |
 
           python tools\validate_arma_config.py `
@@ -219,7 +211,7 @@ jobs:
       # ---------------------------------------------------------
       - name: Validation successful
         if: success()
-        shell: powershell
+        shell: pwsh
         run: |
 
           Write-Host ""
@@ -227,9 +219,10 @@ jobs:
           Write-Host " ARMA 3 VALIDATION PASSED"
           Write-Host "========================================"
           Write-Host ""
-          Write-Host "SQF syntax ............. PASS"
-          Write-Host "Config/HPP structure .. PASS"
-          Write-Host "description.ext ....... PASS"
-          Write-Host "config.cpp ............ PASS"
+          SQF syntax ............. PASS
+          Arma config syntax ..... PASS
+          Includes ............... PASS
+          Preprocessor structure . PASS
+          Balanced symbols ....... PASS
           Write-Host ""
           Write-Host "No validation errors were found."
