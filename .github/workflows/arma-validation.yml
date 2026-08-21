@@ -219,10 +219,10 @@ jobs:
           Write-Host " ARMA 3 VALIDATION PASSED"
           Write-Host "========================================"
           Write-Host ""
-          SQF syntax ............. PASS
-          Arma config syntax ..... PASS
-          Includes ............... PASS
-          Preprocessor structure . PASS
-          Balanced symbols ....... PASS
+          Write-Host "SQF syntax ............. PASS"
+          Write-Host "Arma config syntax ..... PASS"
+          Write-Host "Includes ............... PASS"
+          Write-Host "Preprocessor structure . PASS"
+          Write-Host "Balanced symbols ....... PASS"
           Write-Host ""
           Write-Host "No validation errors were found."
