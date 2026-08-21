@@ -72,13 +72,16 @@ jobs:
               $changed = git diff --name-only $base $head
 
               foreach ($file in $changed) {
-
                   if (
                       $file -match '\.sqf$' -or
                       $file -match '\.hpp$' -or
                       $file -match '\.ext$' -or
                       $file -match '(^|/)description\.ext$' -or
-                      $file -match '(^|/)config\.cpp$'
+                      $file -match '(^|/)config\.cpp$' -or
+                      $file -match '(^|/)CfgFunctions\.hpp$' -or
+                      $file -match '(^|/)xeh_PreInit_EH\.hpp$' -or
+                      $file -match '(^|/)cfgMRH_SoldierTabData\.hpp$' -or
+                      $file -match '(^|/)cfgMRH_SoldierTabIntelPictures.hpp\.hpp$'
                   ) {
                       $files += $file
                   }
@@ -96,7 +99,11 @@ jobs:
                           $_.Extension -ieq ".hpp" -or
                           $_.Extension -ieq ".ext" -or
                           $_.Name -ieq "description.ext" -or
-                          $_.Name -ieq "config.cpp"
+                          $_.Name -ieq "config.cpp" -or
+                          $_.Name -ieq "CfgFunctions.hpp" -or
+                          $_.Name -ieq "xeh_PreInit_EH.hpp" -or
+                          $_.Name -ieq "cfgMRH_SoldierTabData.hpp" or
+                          $_.Name -ieq "cfgMRH_SoldierTabIntelPictures.hpp"
                       )
                   } |
                   ForEach-Object {
