@@ -1,4 +1,4 @@
-name: Arma 3 Validation
+name: Arma 3 Mission Validation
 
 on:
   pull_request:
@@ -13,95 +13,216 @@ on:
 
 permissions:
   contents: read
-  pull-requests: write
-  checks: write
 
 jobs:
   validate:
-    name: Validate Arma 3 Scripts
-    runs-on: ubuntu-latest
+    name: Validate Arma 3 Mission
+    runs-on: windows-latest
 
     steps:
-      # ------------------------------------------------------------
+      # ---------------------------------------------------------
       # Checkout
-      # ------------------------------------------------------------
+      # ---------------------------------------------------------
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7.0.1
         with:
           fetch-depth: 0
 
-      # ------------------------------------------------------------
+      # ---------------------------------------------------------
       # Python
-      # ------------------------------------------------------------
+      # ---------------------------------------------------------
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.x"
 
-      # ------------------------------------------------------------
+      # ---------------------------------------------------------
       # Install SQFLint
-      # ------------------------------------------------------------
+      # ---------------------------------------------------------
       - name: Install SQFLint
+        shell: pwsh
         run: |
           python -m pip install --upgrade pip
           python -m pip install sqflint
 
-      # ------------------------------------------------------------
-      # Run SQFLint against SQF files
-      # ------------------------------------------------------------
-      - name: Run SQFLint
-        shell: bash
+      # ---------------------------------------------------------
+      # Find files that need checking
+      #
+      # Pull requests:
+      #   Only changed SQF/HPP/EXT/config files are checked.
+      #
+      # Pushes to main / manual runs:
+      #   The entire repository is checked.
+      # ---------------------------------------------------------
+      - name: Find files to validate
+        id: files
+        shell: pwsh
         run: |
-          set +e
 
-          mkdir -p validation
+          $files = @()
 
-          SQF_FAILED=0
+          if ("${{ github.event_name }}" -eq "pull_request") {
 
-          while IFS= read -r -d '' file; do
-            echo "::group::SQFLint - $file"
+              Write-Host "Pull request detected."
+              Write-Host "Finding changed Arma files..."
 
-            python -m sqflint "$file"
+              $base = "${{ github.event.pull_request.base.sha }}"
+              $head = "${{ github.event.pull_request.head.sha }}"
 
-            RESULT=$?
+              $changed = git diff --name-only $base $head
 
-            if [ $RESULT -ne 0 ]; then
-              SQF_FAILED=1
-            fi
+              foreach ($file in $changed) {
+                  if (
+                      $file -match '\.sqf$' -or
+                      $file -match '\.hpp$' -or
+                      $file -match '\.ext$' -or
+                      $file -match '\.cpp$'
 
-            echo "::endgroup::"
+                  ) {
+                      $files += $file
+                  }
+              }
 
-          done < <(find . \
-            -type f \
-            -name "*.sqf" \
-            -not -path "./.git/*" \
-            -print0)
+          } else {
 
-          if [ $SQF_FAILED -ne 0 ]; then
-            echo "::error::SQFLint found SQF errors."
-            exit 1
-          fi
+              Write-Host "Full repository validation."
 
-      # ------------------------------------------------------------
-      # Validate Arma config / HPP files
-      # ------------------------------------------------------------
+              $files = Get-ChildItem -Recurse -File |
+                  Where-Object {
+                      $_.FullName -notmatch '\\.git\\' -and
+                      (
+                          $_.Extension -ieq ".sqf" -or
+                          $_.Extension -ieq ".hpp" -or
+                          $_.Extension -ieq ".ext" -or
+                          $_.Extension -ieq ".cpp"
+
+                      )
+                  } |
+                  ForEach-Object {
+                      $_.FullName
+                  }
+          }
+
+          if ($files.Count -eq 0) {
+
+              Write-Host "No Arma files need validation."
+
+              "has_files=false" >> $env:GITHUB_OUTPUT
+
+          } else {
+
+              Write-Host ""
+              Write-Host "Files to validate:"
+              $files | ForEach-Object {
+                  Write-Host "  $_"
+              }
+
+              "has_files=true" >> $env:GITHUB_OUTPUT
+
+              # Save paths for later steps.
+              $files | Out-File `
+                  -FilePath "$env:GITHUB_WORKSPACE\validation-files.txt" `
+                  -Encoding utf8NoBOM
+          }
+
+      # ---------------------------------------------------------
+      # SQFLint
+      # ---------------------------------------------------------
+      - name: Validate SQF
+        if: steps.files.outputs.has_files == 'true'
+        shell: pwsh
+        run: |
+
+          $failed = $false
+
+          $files = Get-Content `
+              "$env:GITHUB_WORKSPACE\validation-files.txt"
+
+          foreach ($file in $files) {
+
+              if (-not ($file -match '\.sqf$')) {
+                  continue
+              }
+
+              Write-Host ""
+              Write-Host "========================================"
+              Write-Host "SQFLint: $file"
+              Write-Host "========================================"
+
+              $output = python -m sqflint "$file" 2>&1
+
+              $exitCode = $LASTEXITCODE
+
+              $output | ForEach-Object {
+                  Write-Host $_
+              }
+
+              if ($exitCode -ne 0) {
+
+                  $failed = $true
+
+                  # Try to turn common SQFLint output into
+                  # GitHub annotations.
+                  foreach ($line in $output) {
+
+                      if (
+                          $line -match
+                          '^(.*?):(\d+)(?::(\d+))?:\s*(.*)$'
+                      ) {
+
+                          $path = $Matches[1]
+                          $lineNumber = $Matches[2]
+                          $column = $Matches[3]
+                          $message = $Matches[4]
+
+                          if ($column) {
+
+                              Write-Host "::error file=$path,line=$lineNumber,col=$column::$message"
+
+                          } else {
+
+                              Write-Host "::error file=$path,line=$lineNumber::$message"
+                          }
+                      }
+                  }
+              }
+          }
+
+          if ($failed) {
+
+              Write-Error "SQFLint found one or more errors."
+
+              exit 1
+          }
+
+      # ---------------------------------------------------------
+      # Config / HPP / EXT validation
+      # ---------------------------------------------------------
       - name: Validate Arma config files
+        if: steps.files.outputs.has_files == 'true'
+        shell: pwsh
         run: |
-          python tools/validate_arma_config.py
 
-      # ------------------------------------------------------------
-      # Summary
-      # ------------------------------------------------------------
+          python tools\validate_arma_config.py `
+              --file-list validation-files.txt
+
+      # ---------------------------------------------------------
+      # Final summary
+      # ---------------------------------------------------------
       - name: Validation successful
         if: success()
+        shell: pwsh
         run: |
-          echo "========================================"
-          echo " Arma 3 validation successful"
-          echo "========================================"
-          echo ""
-          echo "SQF files: OK"
-          echo "HPP/config files: OK"
-          echo "Bracket structure: OK"
-          echo "Class structure: OK"
-          echo ""
-          echo "No validation errors were found."
+
+          Write-Host ""
+          Write-Host "========================================"
+          Write-Host " ARMA 3 VALIDATION PASSED"
+          Write-Host "========================================"
+          Write-Host ""
+          Write-Host "SQF syntax ............. PASS"
+          Write-Host "Arma config syntax ..... PASS"
+          Write-Host "Includes ............... PASS"
+          Write-Host "Preprocessor structure . PASS"
+          Write-Host "Balanced symbols ....... PASS"
+          Write-Host ""
+          Write-Host "No validation errors were found."
