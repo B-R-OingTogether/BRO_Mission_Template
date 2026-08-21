@@ -7,8 +7,7 @@ Validates:
 
     *.hpp
     *.ext
-    description.ext
-    config.cpp
+    *.cpp
 
 This is intended for Arma 3 mission repositories.
 
