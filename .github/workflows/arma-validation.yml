@@ -102,7 +102,7 @@ jobs:
                           $_.Name -ieq "config.cpp" -or
                           $_.Name -ieq "CfgFunctions.hpp" -or
                           $_.Name -ieq "xeh_PreInit_EH.hpp" -or
-                          $_.Name -ieq "cfgMRH_SoldierTabData.hpp" or
+                          $_.Name -ieq "cfgMRH_SoldierTabData.hpp" -or
                           $_.Name -ieq "cfgMRH_SoldierTabIntelPictures.hpp"
                       )
                   } |
