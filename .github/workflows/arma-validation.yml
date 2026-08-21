@@ -81,7 +81,7 @@ jobs:
                       $file -match '(^|/)CfgFunctions\.hpp$' -or
                       $file -match '(^|/)xeh_PreInit_EH\.hpp$' -or
                       $file -match '(^|/)cfgMRH_SoldierTabData\.hpp$' -or
-                      $file -match '(^|/)cfgMRH_SoldierTabIntelPictures.hpp\.hpp$'
+                      $file -match '(^|/)cfgMRH_SoldierTabIntelPictures\.hpp$'
                   ) {
                       $files += $file
                   }
