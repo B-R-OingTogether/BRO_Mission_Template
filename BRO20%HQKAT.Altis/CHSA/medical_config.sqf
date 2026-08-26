@@ -38,6 +38,6 @@ _doctorMedical = ["ACM_IV_14g","ACM_IV_16g","ACM_ChestSeal","ACM_ElasticWrap","A
 
 /***********************************************************************************************/
 
-_specItems = [_infantryMedical, _doctorMedical, _infantryMedical, _doctorMedical, _infantryMedical, _infantryMedical, _doctorMedical, _infantryMedical, _doctorMedical, _infantryMedical, _sectionMedical, _sectionMedical, _sectionMedical, _infantryMedical, _doctorMedical, _doctorMedical, _doctorMedical];
+_specItems = [_infantryMedical, _doctorMedical, _infantryMedical, _doctorMedical, _infantryMedical, _infantryMedical, _doctorMedical, _infantryMedical, _doctorMedical, _infantryMedical, _sectionMedical, _sectionMedical, _sectionMedical, _infantryMedical, _doctorMedical, _doctorMedical, _doctorMedical, _infantryMedical, _doctorMedical, _infantryMedical];
 
 [[_this select 0, _specTypes, _specItems, _arsenalType]] spawn CHSA_fnc_executeLocalArsenal;
