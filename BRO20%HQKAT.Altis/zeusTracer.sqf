@@ -149,17 +149,23 @@ addMissionEventHandler ["Draw3D", {
 	while {sleep 1;!isNull player} do {
 		//Wait until Zeus detected
 		waitUntil {!(displayNull isEqualTo findDisplay 312)};
+
+		private _zeusDisplay = findDisplay 312;
 		//If T is pressed (20 = t) then activate tracer drawing
-		(findDisplay 312) displayAddEventHandler ["KeyDown", "
+		private _keyHandlerId = _zeusDisplay displayAddEventHandler ["KeyDown", "
 			if ((_this # 1) isEqualTo 20) then {
-				if (missionNameSpace getVariable ['FOS_DrawZeusTracer',true]) then {
+				if (missionNameSpace getVariable ['FOS_DrawZeusTracer',false]) then {
 					missionNameSpace setVariable ['FOS_DrawZeusTracer',false]
 				} else {
 					missionNameSpace setVariable ['FOS_DrawZeusTracer',true]
 				};
 			};
 		"];
+
 		//Wait until Zeus no longer exists before looping
 		waitUntil {displayNull isEqualTo findDisplay 312};
+
+		//Remove the handler now that Zeus has closed, so it doesn't stack next time
+		_zeusDisplay displayRemoveEventHandler ["KeyDown", _keyHandlerId];
 	};
 };
