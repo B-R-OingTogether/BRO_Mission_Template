@@ -30,13 +30,13 @@ _masks = ["MRH_HaloMask","MRH_HaloMaskNoESS","G_AirPurifyingRespirator_01_nofilt
 
 //Medical Supplies (tiered: infantry < section < doctor, each building on the last, deduped)
 _infantryMedical = ["ACM_SuctionBag","ACM_IV_14g","ACM_IV_16g","ACM_ChestSeal","ACM_ElasticWrap","ACM_EmergencyTraumaDressing","ACM_NCDKit","ACM_NPA","ACM_PressureBandage","ACM_SAMSplint","ACE_tourniquet","ACE_Canteen","ACE_Canteen_Half","ACE_WaterBottle","ACE_WaterBottle_Half","ACM_AmmoniaInhalant","ACM_Paracetamol"];
-_infantryMedical = + _masks;
+_infantryMedical = _infantryMedical + _masks;
 
 _sectionMedical = ["ACM_OxygenTank_425","ACM_BloodBag_ON_1000","ACM_BloodBag_ON_250","ACM_BloodBag_ON_500","ACE_bodyBag","ACM_Vial_CalciumChloride","ACM_Vial_Epinephrine","ACM_IO_EZ","ACM_IO_FAST","ACM_FieldBloodTransfusionKit_500","ACM_IGel","ACM_OPA","ACM_PocketBVM","ACM_Syringe_1","ACE_morphine","ACM_Inhaler_Penthrox"];
-_sectionMedical = + _infantryMedical;
+_sectionMedical = _sectionMedical + _infantryMedical;
 
 _doctorMedical = ["ACM_ACCUVAC","ACM_Vial_Adenosine","ACM_Vial_Amiodarone","ACM_Vial_Atropine","ACM_AED","ACM_BVM","ACE_bodyBag_blue","ACM_ChestTubeKit","ACM_CricKit","ACE_epinephrine","ACM_Vial_Ertapenem","ACM_Vial_Esmolol","ACM_Lozenge_Fentanyl","ACM_Vial_Fentanyl","ACM_FieldBloodTransfusionKit_250","ACM_Vial_Ketamine","ACM_Vial_Lidocaine","ACM_Vial_Morphine","ACM_Spray_Naloxone","ACM_Vial_Ondansetron","ACM_PressureCuff","ACM_PulseOximeter","ACE_salineIV_250","ACM_Stethoscope","ACE_salineIV_500","ACE_salineIV","ACM_Vial_TXA","ACM_ThoracostomyKit","ACM_Syringe_5","ACM_Syringe_3","ACM_Syringe_10","ACE_suture","ACE_surgicalKit","ACE_plasmaIV_500","ACE_plasmaIV_250","ACE_plasmaIV","ACE_personalAidKit","ACM_Autoinjector_ATNA","ACM_Autoinjector_Midazolam"];
-_doctorMedical = + _infantryMedical + _sectionMedical;
+_doctorMedical = _doctorMedical + _infantryMedical + _sectionMedical;
 /***********************************************************************************************/
 
 _specItems = [_infantryMedical, _doctorMedical, _infantryMedical, _doctorMedical, _infantryMedical, _infantryMedical, _doctorMedical, _infantryMedical, _doctorMedical, _infantryMedical, _sectionMedical, _sectionMedical, _sectionMedical, _infantryMedical, _doctorMedical, _doctorMedical, _doctorMedical, _infantryMedical, _doctorMedical, _infantryMedical];

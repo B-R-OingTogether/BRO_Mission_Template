@@ -39,17 +39,13 @@ _spraypaint = ["ACE_SpraypaintBlue","ACE_SpraypaintGreen","ACE_SpraypaintRed"];
 
 _generalEquipment = _generalAmmo + _grenades + _glaAmmo + _chemlights + _handFlares + _spraypaint;
 
-/************************************* Class Specific Gear *************************************/
-//Class specific gear
-//Only small edits depending on mission parameters would occur here
-//Add class specific stuff here. E.g. Backpacks, range tables etc
+/************************************* Class Specific Gear (None-durable specialist equipment) *************************************/
 
-_crewmanEquipment = ["H_HelmetCrew_B","H_HelmetCrew_I_E","U_B_Cav_Coveralls"];
-_randomEquipment = [];
-_marksmanEquipment = ["ACE_Kestrel4500","ACE_microDAGR","ACE_RangeCard","acex_intelitems_notepad","ACE_SpottingScope","ACE_Tripod"];
-_vanguardEquipment = ["slr_slingload_CargoSling","J3FF_BasicDefusalKit","ACE_DefusalKit","ACE_Fortify","ACE_M26_Clacker","ACE_Clacker","APERSMineDispenser_Mag","ATMine_Range_Mag","SLAMDirectionalMine_Wire_Mag","APERSTripMine_Wire_Mag","CUP_PipeBomb_M","APERSBoundingMine_Range_Mag","ClaymoreDirectionalMine_Remote_Mag","SatchelCharge_Remote_Mag","DemoCharge_Remote_Mag","CUP_Mine_M","ACE_UAVBattery","EOD9_HELMET","EOD9_HELMET_Dark","EOD9_HELMET_Tan","EOD9_HELMET_Base","EOD_Uniform_Dark","EOD_Uniform_Tan","EOD_Uniform","EOD_SUIT_vest_Dark","V_EOD_olive_F","EOD_SUIT_vest_Tan","EOD_SUIT_vest","B_UavTerminal","EODS_Mirror_Weapon","EODS_Mirror_2","EODS_Detector_Weapon","EOD_Bag","APOBS_B","APOBS_A","B_UGV_02_Demining_backpack_F"];
-_shelldrakeEquipment = ["B_UavTerminal","B_W_Static_Designator_01_weapon_F","B_UAV_06_backpack_F","MRH_HackingTool","Laserdesignator_01_khk_F","Laserdesignator_03","Laserdesignator","ACE_RangeTable_82mm","ACE_ATragMX","ACE_RangeCard","ACE_UAVBattery","B_UavTerminal","TFAR_anprc152","ACE_artilleryTable"];
-_hotelEquipment = ["Laserdesignator","Laserdesignator_03","Laserdesignator_01_khk_F","ACE_HuntIR_monitor","H_PilotHelmetHeli_B","H_CrewHelmetHeli_B","U_B_HeliPilotCoveralls","U_AC_Massif_Rolled_Hotel_Private","U_AC_Massif_Hotel_Private","U_B_Hotel_Coveralls","B_UavTerminal","slr_slingload_CargoSling","U_B_CavAMCU_Coveralls_Arctic","U_B_CavAMCU_Coveralls_Arid","U_B_CavAMCU_Coveralls_Black","U_B_CavAMCU_Coveralls_Highlander","U_B_CavAMCU_Coveralls_Mandrake","U_B_CavAMCU_Coveralls_Neptune","U_B_CavAMCU_Coveralls_Tropic","U_B_CavAMCU_Coveralls_Typhon","U_B_CavAMCU_Coveralls_Urban","U_B_CavAMCU_Coveralls_Woodland","ACE_UAVBattery","CFP_SOARCREW_BLUE","CFP_SOARCREW_STACHE","CFP_SOARCREW_RED","CFP_SOARCREW_SKULL"];
+_crewmanEquipment = [""];
+_marksmanEquipment = [""];
+_vanguardEquipment = [""];
+_shelldrakeEquipment = [""];
+_hotelEquipment = [""];
 _prontoEquipment = [""];
 
 /***********************************************************************************************/
