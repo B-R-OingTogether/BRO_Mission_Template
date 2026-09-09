@@ -29,15 +29,16 @@ _specTypes = [
 _masks = [""];
 
 //Medical Supplies
-
-//Medical Supplies
 _infantryMedical = [""];
-_sectionMedical = [""] + _infantryMedical;
-_doctorMedical = [""] + _infantryMedical + _sectionMedical;
+_infantryMedical = _infantryMedical + _masks;
 
+_sectionMedical = [""];
+_sectionMedical = _sectionMedical + _infantryMedical;
 
+_doctorMedical = [""];
+_doctorMedical = _doctorMedical + _infantryMedical + _sectionMedical;
 /***********************************************************************************************/
 
-_specItems = [_infantryMedical, _doctorMedical, _infantryMedical, _doctorMedical, _infantryMedical, _infantryMedical, _doctorMedical, _infantryMedical, _doctorMedical, _infantryMedical, _sectionMedical, _sectionMedical, _sectionMedical, _infantryMedical, _doctorMedical, _doctorMedical, _doctorMedical];
+_specItems = [_infantryMedical, _doctorMedical, _infantryMedical, _doctorMedical, _infantryMedical, _infantryMedical, _doctorMedical, _infantryMedical, _doctorMedical, _infantryMedical, _sectionMedical, _sectionMedical, _sectionMedical, _infantryMedical, _doctorMedical, _doctorMedical, _doctorMedical, _infantryMedical, _doctorMedical, _infantryMedical];
 
 [[_this select 0, _specTypes, _specItems, _arsenalType]] spawn CHSA_fnc_executeLocalArsenal;
